@@ -9,6 +9,7 @@ gem 'jquery-rails', '~> 4.0.3'
 gem 'turbolinks', '~> 2.5.3'
 gem 'jbuilder', '~> 2.0'
 gem 'slim', '~> 3.0.3'
+gem 'slim-rails', '~> 3.0.1'
 gem 'bcrypt', '~> 3.1.10'
 gem 'bootstrap-sass', '~> 3.3.4.1'  # Will be used temporarily until AshLey works on design, hopefully using the Bootstrap Framework.
 
