@@ -13,6 +13,9 @@ gem 'slim-rails', '~> 3.0.1'
 gem 'bcrypt', '~> 3.1.10'
 gem 'bootstrap-sass', '~> 3.3.4.1'  # Will be used temporarily until AshLey works on design, hopefully using the Bootstrap Framework.
 
+# User authentication
+gem 'devise', '~> 3.4.1'
+
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
