@@ -21,6 +21,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'better_errors', '~> 2.1.1'
 end
 
 group :test do
