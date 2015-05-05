@@ -17,6 +17,9 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'devise', '~> 3.4.1'
 gem 'omniauth-facebook', '~> 2.0.1'
 
+# Setting environment variables
+gem 'figaro', '~> 1.1.1'
+
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
