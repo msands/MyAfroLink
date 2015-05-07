@@ -11,10 +11,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'slim', '~> 3.0.3'
 gem 'slim-rails', '~> 3.0.1'
 gem 'bcrypt', '~> 3.1.10'
-gem 'bootstrap-sass', '~> 3.3.4.1'  # Will be used temporarily until AshLey works on design, hopefully using the Bootstrap Framework.
+gem 'bootstrap-sass', '~> 3.3.4.1'
 
 # User authentication
 gem 'devise', '~> 3.4.1'
+gem 'omniauth-facebook', '~> 2.0.1'
+
+# Setting environment variables
+gem 'figaro', '~> 1.1.1'
 
 group :development, :test do
   gem 'byebug'
