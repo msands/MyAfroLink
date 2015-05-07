@@ -234,6 +234,8 @@ Devise.setup do |config|
   # up on your models and hooks.
   config.omniauth :facebook, ENV["FACEBOOK_CONSUMER_KEY"], ENV["FACEBOOK_CONSUMER_SECRET"]
 
+  config.omniauth :google_oauth2, "GOOGLE_APP_ID", "GOOGLE_APP_SECRET", { access_type: "offline", approval_prompt: "" }
+
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
