@@ -2,4 +2,10 @@ h1 My Afro Link
 p
   | This is the home page for the
   =<> link_to "My Afro Link", root_path
-  web application.
+  |web application.
+
+- if user_signed_in?
+  p
+    | Please
+    =<> link_to "click here", user_user_profiles_path
+    |to view all profiles.

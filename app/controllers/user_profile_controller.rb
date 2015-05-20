@@ -1,12 +1,14 @@
 class UserProfileController < ApplicationController
 
-  before_filter :get_user
+  before_action :authenticate_user!
 
-  def get_user
-    @user = User.find(params[:user_id])
+  def index
+    @user = UserProfile.all
   end
 
   def new
+    @user = UserProfile.new
+    @profile = @user.user_profile
   end
 
   def create

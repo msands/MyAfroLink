@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
 
-  resources :user_profiles, only: [:new, :create]
+  resources :users do
+    resources :user_profiles, only: [:index, :new, :create]
+  end
+
   root 'static_pages#home'
 
   get 'about' => 'static_pages#about'
