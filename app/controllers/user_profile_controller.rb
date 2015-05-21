@@ -3,12 +3,11 @@ class UserProfileController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @user = UserProfile.all
+    @user = User.UserProfile.all
   end
 
   def new
-    @user = UserProfile.new
-    @profile = @user.user_profile
+    @user = User.UserProfile.new
   end
 
   def create
