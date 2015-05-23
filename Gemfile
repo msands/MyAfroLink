@@ -14,7 +14,10 @@ gem 'bcrypt', '~> 3.1.10'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 
 # Building simple forms
-gem 'simple_form'
+gem 'simple_form', '~> 3.1.0'
+
+# User profile phot upload
+gem 'paperclip', '~> 4.2.1'
 
 # User authentication
 gem 'devise', '~> 3.4.1'
