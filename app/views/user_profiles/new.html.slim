@@ -1,3 +1,11 @@
-h2 User profile page
-p
-  |This is the page to view user profiles
+h2 Create Your Profile
+
+.row
+  .col-md-12
+    = simple_form_for(@user_profile, html: { class: 'form-horizontal' }) do |f|
+      = f.input :first_name
+      = f.input :last_name
+      = f.input :gender, collection: UserProfile::GENDERS, as: :select
+      = f.input :birthday, as: :date, start_year: Date.today.year - 90, end_year: Date.today.year - 12, order: [:month, :day, :year]
+      = f.input :tribe
+      = f.submit "Create Profile", class: 'btn btn-block btn-success'

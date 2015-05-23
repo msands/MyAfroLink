@@ -13,6 +13,9 @@ gem 'slim-rails', '~> 3.0.1'
 gem 'bcrypt', '~> 3.1.10'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 
+# Building simple forms
+gem 'simple_form'
+
 # User authentication
 gem 'devise', '~> 3.4.1'
 gem 'omniauth-facebook', '~> 2.0.1'
