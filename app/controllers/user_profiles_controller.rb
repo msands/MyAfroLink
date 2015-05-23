@@ -26,6 +26,20 @@ class UserProfilesController < ApplicationController
     end
   end
 
+  def edit
+    @user_profile = UserProfile.find(params[:id])
+  end
+
+  def update
+    @user_profile = UserProfile.find(params[:id])
+    if @user_profile.update_attributes(user_params)
+      flash[:success] = "User Profile updated"
+      redirect_to @user_profile
+    else
+      render 'edit'
+    end
+  end
+
   private
 
   def user_profile_params
@@ -34,7 +48,8 @@ class UserProfilesController < ApplicationController
       :last_name,
       :gender,
       :birthday,
-      :tribe
+      :tribe,
+      :image
     )
   end
 
