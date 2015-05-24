@@ -4,7 +4,7 @@ h1 My Profile
   .col-md-8
     p
       | Profile photo:
-      =<> image_tag user_profile.image.url(:medium)
+      =<> image_tag @user_profile.image.url(:medium)
     p
       | First name:
       =<> @user_profile.first_name
