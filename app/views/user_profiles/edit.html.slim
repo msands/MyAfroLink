@@ -9,4 +9,4 @@ h2 Create Your Profile
       = f.input :birthday, as: :date, start_year: Date.today.year - 90, end_year: Date.today.year - 12, order: [:month, :day, :year]
       = f.input :tribe, collection: UserProfile::TRIBES, as: :select
       = f.file_field :image
-      = f.submit "Create Profile", class: 'btn btn-block btn-success'
+      = f.submit "Update Profile", class: 'btn btn-block btn-success'
