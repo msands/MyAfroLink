@@ -16,8 +16,9 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 # Building simple forms
 gem 'simple_form', '~> 3.1.0'
 
-# User profile phot upload
+# User profile photo upload
 gem 'paperclip', '~> 4.2.1'
+gem 'aws-sdk', '~> 2.0.45'
 
 # User authentication
 gem 'devise', '~> 3.4.1'
