@@ -20,3 +20,7 @@ h1 My Profile
     p
       | Tribe:
       =<> @user_profile.tribe
+
+    p
+      =<> link_to "Click here", edit_user_profile_path(current_user.user_profile)
+      | to edit your user profile

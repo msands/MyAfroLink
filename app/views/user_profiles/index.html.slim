@@ -1,3 +1,8 @@
 h2 Page to list all user profile pages
 
-=<> @user_profiles
+.ul
+  .container
+    = @user_profiles.each do |user_profile|
+      .li
+        = image_tag user_profile.image.url, size: "50"
+        = link_to user_profile.first_name, '#'

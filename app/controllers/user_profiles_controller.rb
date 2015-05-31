@@ -11,15 +11,11 @@ class UserProfilesController < ApplicationController
     @user_profile = UserProfile.new
   end
 
-  def show
-    @user_profile = UserProfile.find(params[:id])
-  end
-
   def create
     @user_profile = UserProfile.new(user_profile_params)
     @user_profile.user = current_user
     if @user_profile.save
-      redirect_to @user_profile, notice: 'Profile was successfully saved'
+      redirect_to my_profiles_path, notice: 'Profile was successfully saved'
     else
       flash[:error] = 'There was an error saving your profile'
       render 'new'
@@ -32,9 +28,9 @@ class UserProfilesController < ApplicationController
 
   def update
     @user_profile = UserProfile.find(params[:id])
-    if @user_profile.update_attributes(user_params)
+    if @user_profile.update_attributes(user_profile_params)
       flash[:success] = "User Profile updated"
-      redirect_to @user_profile
+      redirect_to my_profiles_path
     else
       render 'edit'
     end
