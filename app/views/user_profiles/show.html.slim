@@ -1,1 +1,20 @@
-h1 test user profile show
+h1 User Profiles
+
+p
+  | Profile photo:
+  =<> image_tag @user_profile.image.url(:medium)
+p
+  | First name:
+  =<> @user_profile.first_name
+p
+  | Last name:
+  =<> @user_profile.last_name
+p
+  | Gender:
+  =<> @user_profile.gender
+p
+  | Birthday:
+  =<> @user_profile.birthday
+p
+  | Tribe:
+  =<> @user_profile.tribe
