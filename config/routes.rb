@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resource :my_profiles, only: :show
   resources :user_profiles, only: [:index, :show, :new, :create, :edit, :update]
+  resources :business_profiles, only: [:index, :show, :new, :create, :edit, :update]
 
   root 'static_pages#home'
 
