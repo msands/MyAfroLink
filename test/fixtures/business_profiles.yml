@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  name: MyString
+  address: MyString
+  city: MyString
+  time_open: 2015-06-01 00:01:20
+  time_close: 2015-06-01 00:01:20
+
+two:
+  user_id: 1
+  name: MyString
+  address: MyString
+  city: MyString
+  time_open: 2015-06-01 00:01:20
+  time_close: 2015-06-01 00:01:20

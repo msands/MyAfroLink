@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :timeoutable, :confirmable, :omniauthable, :omniauth_providers => [:facebook, :google_oauth2]
 
   has_one :user_profile, dependent: :destroy
+  has_many :business_profiles
   delegate :first_name, to: :user_profile
 
   def self.from_omniauth(auth)
