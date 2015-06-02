@@ -1,1 +1,22 @@
 h2 Business Profiles
+
+p
+  | Business Photo:
+  =<> image_tag @business_profile.image.url(:large)
+
+p
+  | Business Name:
+  =<> @business_profile.name
+
+p
+  | Business Address:
+  =< @business_profile.address
+  |,
+  =<> @business_profile.city
+
+p
+  | Business hours:
+  =<> @business_profile.time_open
+  | --
+  =<> @business_profile.time_close
+

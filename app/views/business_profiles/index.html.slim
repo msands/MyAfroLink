@@ -1,1 +1,8 @@
 h2 Page tolist all business profiles
+
+ul.profile-index
+  .container
+    - @business_profiles.each do |business_profile|
+      li
+        = image_tag business_profile.image.url(:small)
+        =<> link_to business_profile.name, business_profile

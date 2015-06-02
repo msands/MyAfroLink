@@ -42,7 +42,7 @@ class BusinessProfilesController< ApplicationController
   private
 
   def business_profile_params
-    prarams.require(:business_profile).permit(
+    params.require(:business_profile).permit(
       :name,
       :address,
       :city,

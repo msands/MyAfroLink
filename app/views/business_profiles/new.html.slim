@@ -1,1 +1,12 @@
 h2 List your business
+
+.row
+  .col-md-12
+    = simple_form_for(@business_profile, html: { class: 'form-horizontal' }) do |f|
+      = f.input :name
+      = f.input :address
+      = f.input :city
+      = f.input :time_open
+      = f.input :time_close
+      = f.file_field :image
+      = f.submit "List business", class: 'btn btn-block btn-success'
