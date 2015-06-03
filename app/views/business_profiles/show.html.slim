@@ -20,3 +20,5 @@ p
   | --
   =<> @business_profile.time_close
 
+- if @business_profile.user == current_user
+  = link_to "Edit Business", edit_business_profile_path, class: 'btn btn-block btn-success'
