@@ -18,3 +18,7 @@ p
 p
   | Tribe:
   =<> @user_profile.tribe
+
+- if @user_profile.user == current_user
+  | If you would like to modify your user profile, please
+  =<> link_to "click here", edit_user_profile_path

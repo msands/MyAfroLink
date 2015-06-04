@@ -16,7 +16,7 @@ h1 My Profile
       =<> @user_profile.gender
     p
       | Birthday:
-      =<> @user_profile.birthday
+      =<> @user_profile.birthday.strftime('%m-%d-%Y')
     p
       | Tribe:
       =<> @user_profile.tribe
