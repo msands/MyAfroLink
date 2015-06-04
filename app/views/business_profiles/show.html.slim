@@ -16,9 +16,9 @@ p
 
 p
   | Business hours:
-  =<> @business_profile.time_open
+  =<> @business_profile.time_open.strftime('%I:%M %p')
   | --
-  =<> @business_profile.time_close
+  =<> @business_profile.time_close.strftime('%I:%M %p')
 
 - if @business_profile.user == current_user
   = link_to "Edit Business", edit_business_profile_path, class: 'btn btn-block btn-success'
