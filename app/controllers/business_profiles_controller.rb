@@ -46,8 +46,10 @@ class BusinessProfilesController< ApplicationController
       :name,
       :address,
       :city,
+      :website,
       :time_open,
       :time_close,
+      :category,
       :image
     )
   end

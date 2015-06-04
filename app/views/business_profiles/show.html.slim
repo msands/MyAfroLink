@@ -15,10 +15,18 @@ p
   =<> @business_profile.city
 
 p
+  | Website:
+  =<> link_to @business_profile.website, '#'
+
+p
   | Business hours:
   =<> @business_profile.time_open.strftime('%I:%M %p')
   | --
   =<> @business_profile.time_close.strftime('%I:%M %p')
+
+p
+  | Business type:
+  =<> @business_profile.category
 
 - if @business_profile.user == current_user
   = link_to "Edit Business", edit_business_profile_path, class: 'btn btn-block btn-success'

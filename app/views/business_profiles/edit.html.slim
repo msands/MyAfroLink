@@ -6,7 +6,9 @@ h2 Update your business listing
       = f.input :name
       = f.input :address
       = f.input :city
+      = f.input :website
       = f.input :time_open, { :ampm => true }
       = f.input :time_close, { :ampm => true }
+      = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
       = f.file_field :image
       = f.submit "Update business listing", class: 'btn btn-block btn-success'
