@@ -6,11 +6,14 @@ h1 My Profile
       | Profile photo:
       =<> image_tag @user_profile.image.url(:medium)
     p
-      | First name:
+      | Name:
       =<> @user_profile.first_name
-    p
-      | Last name:
       =<> @user_profile.last_name
+
+    p
+      | Email address:
+      =<> mail_to @user_profile.email, @user_profile.email
+
     p
       | Gender:
       =<> @user_profile.gender
