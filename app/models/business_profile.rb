@@ -1,4 +1,6 @@
 class BusinessProfile < ActiveRecord::Base
+  searchkick
+
   CATEGORIES = ["Food", "Jewelry", "Clothing", "Grocery"]
 
   belongs_to :user

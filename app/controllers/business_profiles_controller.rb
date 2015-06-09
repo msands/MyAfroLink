@@ -3,7 +3,11 @@ class BusinessProfilesController< ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @business_profiles = BusinessProfile.all
+    if params[:query].present?
+      @business_profiles = BusinessProfile.search(params[:query])
+    else
+      @business_profiles = BusinessProfile.all
+    end
   end
 
   def show
