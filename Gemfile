@@ -25,6 +25,9 @@ gem 'devise', '~> 3.4.1'
 gem 'omniauth-facebook', '~> 2.0.1'
 gem 'omniauth-google-oauth2', '~> 0.2.6'
 
+# Search
+gem 'searchkick', '~> 0.9.0'
+
 # Setting environment variables
 gem 'figaro', '~> 1.1.1'
 
