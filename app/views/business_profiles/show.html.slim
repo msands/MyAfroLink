@@ -32,5 +32,9 @@ p
   | Business type:
   =<> @business_profile.category
 
+p
+  | Business description:
+  =<> @business_profile.description
+
 - if @business_profile.user == current_user
   = link_to "Edit Business", edit_business_profile_path, class: 'btn btn-block btn-success'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150604053903) do
+ActiveRecord::Schema.define(version: 20150611040725) do
 
   create_table "business_profiles", force: :cascade do |t|
     t.integer  "user_id"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20150604053903) do
     t.string   "category"
     t.string   "website"
     t.string   "email"
+    t.text     "description"
   end
 
   create_table "user_profiles", force: :cascade do |t|

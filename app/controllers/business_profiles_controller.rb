@@ -55,7 +55,8 @@ class BusinessProfilesController< ApplicationController
       :time_open,
       :time_close,
       :category,
-      :image
+      :description,
+      :image,
     )
   end
 
