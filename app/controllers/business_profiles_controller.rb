@@ -22,7 +22,7 @@ class BusinessProfilesController< ApplicationController
     @business_profile = BusinessProfile.new(business_profile_params)
     @business_profile.user = current_user
     if @business_profile.save
-      redirect_to business_profile_path, notice: 'Business Profile was successfully listed'
+      redirect_to @business_profile, notice: 'Business Profile was successfully listed'
     else
       flash[:error] = 'There was an error listing your business'
       render 'new'
