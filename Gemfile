@@ -49,6 +49,8 @@ group :production do
   gem 'pg', '~> 0.18.1'
   gem 'rails_12factor', '~> 0.0.3'
   gem 'unicorn', '~> 4.9.0'
+  gem 'elasticsearch-model'
+  gem 'elasticsearch-rails'
 end
 
 group :doc do
