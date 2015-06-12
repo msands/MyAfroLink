@@ -1,0 +1,299 @@
+//Home Page//
+
+.alert {
+	padding: 0;
+	border: 0;
+}
+
+//Call To Action//
+.section-callToAction {
+	font-family: avantgardemditc-bold;
+	margin: 5% 0 4.5% 0;
+	width: 100%;
+
+	h1 {
+		font-size: 7.5em;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: #fff;
+		background-color: $bg-grey;
+		margin: 0 0 5% 0;
+		padding: 18px 35px 18px 35px;
+		text-decoration: none;
+		font-size: 13px;
+	}
+}
+
+//Search Form//
+.section-search {
+	background-color: $bg-dark;
+	height: 100px;
+	padding-top: 21px;
+
+	.container {
+		margin-top: 5px;
+
+		.search {
+			position: relative;
+
+			@include placeholder {
+				color: #979797;
+			}
+
+			.form-control {
+				background-color: #fff;
+				color: #000;
+				font-size: 13px;
+				border: 1.7px solid #b0b0b0;
+				border-radius: 0px;
+				display: inline;
+			}
+
+			//Font Awesome Location Marker//
+			.fa-map-marker {
+				position: relative;
+				left: 55px;
+				top: 3px;
+			}
+
+			.inputLocation {
+				margin-right: -5px;
+				padding: 0 20px 0 55px;
+				width: 23%;
+				height: 49px;
+
+			}
+
+			.inputSearch {
+				width: 35%;
+				height: 49px;
+
+			}
+
+			button {
+				margin: 0 25px 0 -4px;
+				font-size: 14px;
+				background-color: $green-button;
+				border: none;
+				color: #fff;
+				padding: 15px 50px 14.5px 50px;
+				vertical-align:top;
+				@include border-radius(3px);
+				border-bottom: 2px solid $green-border;
+			}
+		}
+	}
+}
+
+//Modal//
+
+//Signup Modal//
+.signup {
+	.modal-dialog {
+		margin-top:  100px;
+		width: 650px;
+
+		.modal-content {
+			background-color: #333334;
+
+
+			.modal-header {
+				border-bottom: 1px solid #373638;
+				.modal-title {
+					color: #fff;
+					padding: 20px 0 20px 0; 
+				}
+				.close {
+					margin-top: 19px;
+					color: #808080;
+					text-shadow: 0 0 0 #808080;
+					width: 20px;
+					height: 20px;
+					padding: 0 2.5px;
+					font-size: 17px;
+					line-height: .2;
+					border-radius: 15px;
+				  	//border: 3px solid #808080;
+				  }
+			}
+				.modal-body {
+					.form-control {
+						margin-top: 23px;
+						height: 44px;
+						background-color: #3c3c3e;
+						border: none;
+						color: #fff;
+					}
+
+					@include placeholder {
+						color: #fff;
+					}
+
+					label {
+						color: #808080;
+						display: block;
+						padding-top: 25px;
+					}
+				}
+
+				.modal-footer {
+					border-top: 0px solid #373638;
+
+					button {
+						background-color: #8067b7;
+						border-color: transparent;
+						background: #8067b7;
+						box-shadow: none;
+						font-size: 11px;
+						margin: 0px 0 15px 0;
+						padding: 10px 25px;
+						border-radius: 35px;
+
+						@include link (#fff, #fff, #fff, #fff);
+					}
+
+					.signup-confirm {
+						color: #808080;
+						padding: 15px 0;
+						a {
+							color: #808080;
+						}
+					}
+				}
+			}
+		}
+	}
+
+//Login Modal//
+.login {
+	@include link (#fff, #fff, #fff, #fff);
+	.modal-dialog {
+		margin-top:  100px;
+		width: 650px;
+
+		.modal-content {
+			background-color: #fff;
+
+
+			.modal-header {
+				border-bottom: 1px solid #e2e2e2;
+				.modal-title {
+					color: #323133;
+					padding: 20px 0 20px 0; 
+				}
+				.close {
+					margin-top: 19px;
+					color: #343434;
+					text-shadow: 0 0 0 #343434;
+					width: 20px;
+					height: 20px;
+					padding: 0 2.5px;
+					font-size: 17px;
+					line-height: .2;
+					border-radius: 15px;
+				  	//border: 3px solid #343434;
+				  }
+				}
+				.modal-body {
+					padding-top: 0px;
+					padding-bottom: 0px;
+					.form-group-left {
+						border-right: 1px solid #e2e2e2;
+					}
+					.form-control {
+						height: 44px;
+						background-color: #eaeaeb;
+						border: none;
+						color: #828283;
+						width: 90%;
+					}
+
+					@include placeholder {
+						color: #828283;
+					}
+
+					p {
+						padding-top: 27px;
+						margin-bottom: 0px;
+						color: #a5a5a5;
+					}
+
+					label {
+						color: #343434;
+						display: block;
+						padding-top: 20px;
+					}
+
+					.radio {
+						color: #a5a5a5;
+					}
+
+					.login-confirm {
+						color: #a5a5a5;
+						padding-bottom: 30px;
+						a {
+							color: #a5a5a5;
+						}
+					}
+
+					.btn-login {
+						background-color: #23a55a;
+						border-color: #23a55a;
+						background-image: none;
+						box-shadow: none;
+						color: #fff;
+						text-shadow: none;
+						width: 121px;
+						height: 40px;
+						border-radius: 35px;
+						font-size: 12px;
+						margin-top: 20px;
+						margin-bottom: 20px;
+					}
+
+					.btn-facebook {
+						background-color: #3b5998;
+						border-color: #3b5998;
+						background-image: none;
+						box-shadow: none;
+						color: #fff;
+						text-shadow: none;
+						width: 180px;
+						height: 40px;
+						border-radius: 35px;
+						font-size: 12px;
+						margin-top: 55px;
+
+						.fa-facebook {
+							margin-left: -40px;
+							margin-right: 30px;
+						}
+					}
+
+					.btn-google {
+						background-color: #d6d6d6;
+						border-color: #d6d6d6;
+						background-image: none;
+						box-shadow: none;
+						color: #fff;
+						text-shadow: none;
+						width: 180px;
+						height: 40px;
+						border-radius: 35px;
+						font-size: 12px;
+						margin-top: 20px;
+
+						.fa-google-plus {
+							margin-left: -40px;
+							margin-right: 30px;
+							color: #F44336;
+							font-size: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
