@@ -1,18 +1,13 @@
-h1 My Afro Link
-
-= link_to "List your business", new_business_profile_path, class: "btn btn-primary btn-lg"
-
-p
-  | This is the home page for the
-  =<> link_to "My Afro Link", root_path
-  |web application.
-
-p
-  | If you would like to see a list off all the businesses, please
-  =<> link_to "click here", business_profiles_path
-
-- if user_signed_in?
-  p
-    | Please
-    =<> link_to "click here", user_profiles_path
-    |to view all profiles.
+section.section-callToAction.text-center
+  .container
+    h1 AFRICA AROUND YOU
+    a href="user_profiles/list_business_form.html"  LIST YOUR BUSINESS
+section.section-search.text-center
+  .container
+    .row
+      .col-md-12
+        form.search
+          span.fa.fa-map-marker.fa-2x
+          input.inputLocation.form-control.text-center placeholder=("WHERE ARE YOU?") type="search" /
+          input.inputSearch.form-control.text-center placeholder=("WHAT ARE YOU LOOKING FOR?") type="search" /
+          button type="submit"  SEARCH
