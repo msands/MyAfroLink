@@ -1,0 +1,25 @@
+//Base//
+
+html {
+	background-color: #f8f8f8;
+}
+
+.homepage {
+    background:url(/assets/bg2.png) no-repeat center center;
+	background-size: cover;
+	min-height:100%;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.5em;
+    background-color: transparent;
+}
+
+#uppercase {
+	text-transform: uppercase;
+}
+
+.inline {
+	display: inline;
+}

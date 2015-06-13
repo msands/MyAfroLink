@@ -1,0 +1,31 @@
+//Footer//
+
+.footer-main {
+	position: absolute;
+	bottom: 0;
+	min-height: 9.5%;
+	width: 100%;
+	font-size: 11px;
+
+	a {
+		text-decoration: none;
+		padding-right: 30px;
+			&:hover, &:focus {
+				color: $link-highlight; 
+				background-color: transparent;
+			}
+	}
+	@include link (#fff, #fff, $link-highlight, #fff);
+		
+}
+
+.footer-user-profile {
+	position: relative;
+	bottom: 50px;
+
+	a {
+		color: #757575;
+	}
+	@include link (#757575, #757575, $link-highlight, #757575);
+}
+
