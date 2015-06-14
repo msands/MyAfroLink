@@ -1,0 +1,119 @@
+//Edit User Profile//
+.section-edit-profile {
+	color: #757575;
+	margin-top: 50px;
+
+	.fa-map-marker {
+		padding-right: 5px;
+	}
+
+	.view_profile_border {
+		border: 1px solid #9b9b9b;
+		margin: 0 70px 0 70px;
+		padding: 4px 0 4px 0;
+	}
+
+	.panel-default {
+		margin: 16.5px 0 80px 0;
+		border-radius: 0px;
+
+		.panel-heading {
+			background-color: #dadada;
+			border-color: transparent;
+			border: 0px;
+			background: #dadada;
+			box-shadow: none;
+			border-radius: 0px;
+
+			.panel-title {
+				margin: 10px 0 10px 10px;
+				font-size: 14px;
+				color: #757575;
+				font-weight: bold;
+			}
+		}
+
+		.panel-body {
+			height: 832px;
+
+			h4 {
+				margin: 20px 0 0 0;
+			}
+
+			.form-group-left {
+				padding-left: 45px;
+
+
+				label {
+					margin: 15px 0 15px 0;
+				}
+				.extra-padding {
+					margin-top: 60px;
+				}
+
+				.form-control {
+					height: 44px;
+					background-color: #f6f6f6;
+					border: none;
+					color: #828283;
+					width: 80%;
+				}
+
+				.row {
+					label {
+						margin-top: 50px; 
+						display: block;
+					}
+					select {
+						width: 100%;
+						background-color: #fff;
+						font-size: 13px;
+						border: 1px solid #ececec;
+						border-radius: 0px;
+					}
+
+					.width-gender, .width-tribe {
+						width: 220px;
+					}
+
+					.width-day {
+						width: 93px;
+						margin-right: 10px;
+					}
+					.width-month {
+						width: 130px;
+						margin-right: 10px;
+					}
+					.width-year {
+						width: 100px;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		//Edit Business Profile//
+		.edit-business-profile {
+			height: 600px;
+
+			.row {
+				width: 647px;
+				.form-control {
+					background-color: transparent;
+					border: 1px solid #ececec;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	button {
+		background-color: #8067b7;
+		border-color: transparent;
+		background: #8067b7;
+		box-shadow: none;
+		font-size: 11px;
+		margin: 0px 0 544px 0;
+		padding: 10px 55px;
+		border-radius: 35px;
+	}
+}

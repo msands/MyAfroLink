@@ -1,0 +1,41 @@
+//Section Terms//
+.section-terms {
+	height: 565px;
+	font-size: 13px;
+	.container {
+		color: #6b6b6b;
+		width: 950px;
+		line-height: 20px;
+		padding-right: 220px;
+		margin-bottom: 60px;
+
+		h3 {
+			padding: 20px 0 20px 0;
+		}
+		.indent {
+			padding-left: 40px;
+
+			h4 {
+				margin-bottom: 3px;
+			}
+
+			p {
+				margin-bottom: 20px;
+			}
+
+			.bold {
+				font-weight: bold;
+			}
+		}
+		
+	}
+
+	.text-center {
+		font-weight: bold;
+		padding-right: 35px;
+		@include link (#6b6b6b, #6b6b6b, #2bc4a7, #4bd7bd);
+		a {
+			padding-right: 1px;
+		}
+	}
+}

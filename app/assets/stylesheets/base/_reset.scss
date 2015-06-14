@@ -1,0 +1,24 @@
+//Reset//
+* {
+	margin:0;
+	padding:0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+h1,h2,h3,h4,h5 {
+	margin-top:0;
+}
+
+a {
+	text-decoration: none;
+}
+
+@include text-decoration (none, none, none, none); //Remove link text underline
+
+ul,li {
+	list-style:none;
+}
+

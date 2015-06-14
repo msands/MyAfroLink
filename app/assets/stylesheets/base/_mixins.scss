@@ -1,0 +1,50 @@
+// Mixins //
+
+@mixin border-radius($radius) {
+	-moz-border-radius:$radius;
+	-webkit-border-radius:$radius;
+	border-radius:$radius;
+}	
+
+@mixin box-shadow($a, $b, $c, $d) {
+	-moz-box-shadow:$a $b $c $d;
+	-webkit-box-shadow:$a $b $c $d;
+	box-shadow:$a $b $c $d;
+}
+
+@mixin placeholder {
+	::-webkit-input-placeholder {@content}
+	:-moz-placeholder {@content} /* Firefox 18- */
+	::-moz-placeholder {@content} /* Firefox 19+ */
+	:-ms-input-placeholder {@content}
+}
+
+@mixin link ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin text-decoration ($link, $visit, $hover, $active) {
+  a {
+    text-decoration: $link;
+    &:visited {
+      text-decoration: $visit;
+    }
+    &:hover {
+      text-decoration: $hover;   
+    }
+    &:active {
+      text-decoration: $active;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.navbar-secondary {
+	margin-bottom: 0px;
+}
+
+.section-business-profile {
+
+	.fa-camera-retro {
+		color: #fff;
+		opacity: 0.9;
+		font-size: 30px;
+		position: absolute;
+	}
+
+	.bread {
+		height: 100%;
+		width: 100%;
+	}
+
+	.grey-background {
+		background-color: #333334;
+		height: 190px;
+		margin-bottom: -170px;
+	}
+
+	.container {
+		height: 1150px;
+		.business-information {
+			color: #fff;
+			.col-sm-3 {
+				padding: 0;
+				margin-right: -50px;
+				img {
+
+					margin-top: -75px;
+				}
+			}
+			.col-md-8 {
+				h3 {
+					padding-top: 0px;
+				}
+				p {
+					line-height: 14px;
+				}
+			}
+
+
+		}
+		.business-description {
+			margin: 80px 100px 0 100px;
+			color: #757575;
+
+			.fav-business {
+				border: 1px solid #757575;
+				padding: 10px 80px 10px 40px;
+				margin-right: -80px; 
+				color: #757575;
+				font-size: 12px;
+			}
+
+			.fa-heart {
+				padding: 7px 0 0px 10px;
+				color: #f4276a;
+				font-size: 23px;
+				display: inline;
+			}
+
+			.center {
+				margin: 60px 0px 0 111px;
+
+				h2 {
+					color: #515151;
+				}
+
+				p {
+					margin-bottom: 20px;
+				}
+
+				a {
+					color: #515151;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.reviews {
+			h3 {
+				color: #515151;
+				margin: 90px 0 50px 0;
+			}
+			.col-md-9 {
+				width: 65%;
+				p {
+					margin-bottom: 80px;
+				}
+			}
+		}
+	}
+}
