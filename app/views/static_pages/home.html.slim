@@ -6,8 +6,12 @@ section.section-search.text-center
   .container
     .row
       .col-md-12
-        form.search
-          span.fa.fa-map-marker.fa-2x
-          input.inputLocation.form-control.text-center placeholder=("WHERE ARE YOU?") type="search" /
-          input.inputSearch.form-control.text-center placeholder=("WHAT ARE YOU LOOKING FOR?") type="search" /
-          button type="submit"  SEARCH
+        = form_tag business_profiles_path, class: "form-inline", method: :get do
+          .form-group
+            = text_field_tag :query, params[:query], class: "form-control text-center", placeholder: "WHAT ARE YOU LOOKING FOR?", :size => "50"
+          '
+          = submit_tag "Search", class: "btn btn-success"
+          - if params[:query].present?
+          '
+          = link_to "clear", business_profiles_path
+        end
