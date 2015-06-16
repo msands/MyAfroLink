@@ -1,4 +1,4 @@
-header.navbar.navbar-default
+header.navbar.navbar-default.navbar-fixed-top
   .container
     .navbar-header
       button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
@@ -6,8 +6,13 @@ header.navbar.navbar-default
         span.icon-bar
         span.icon-bar
         span.icon-bar
+<<<<<<< Updated upstream
       a = link_to root_path
         img src="assets/logo.png" /
+=======
+      = link_to root_path do
+        = image_tag "Logo_All White.png"
+>>>>>>> Stashed changes
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li

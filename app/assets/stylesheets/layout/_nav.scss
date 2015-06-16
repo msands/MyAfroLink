@@ -3,14 +3,21 @@
 //Primary Navigation - Homepage//
 .navbar-default {
 	margin-top: 3%;
+	margin-bottom: 3%;
 	background-color: transparent;
 	border-color: transparent;
 	border: 0px;
    	background: transparent;
    	box-shadow: none;
 
+   	.navbar-header {
+   		width: 40%;
+		img {
+			height: 40%;
+			width: 40%;
+		}
+	}
 	.navbar-nav {
-		padding-top: 17px;
 		>li >a {
 			color: #fff;
 			text-shadow: none;
