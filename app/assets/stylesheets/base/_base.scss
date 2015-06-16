@@ -5,18 +5,35 @@ html {
 }
 
 .homepage {
+<<<<<<< HEAD
     background:url(/assets/bg2.png) no-repeat center center;
+=======
+  background: asset-url("bg2.png") no-repeat center center;
+>>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
 	background-size: cover;
 	min-height:100%;
 }
 
 body {
+<<<<<<< HEAD
 	margin-top: 125px;
+=======
+>>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
     font-size: 12px;
     line-height: 1.5em;
     background-color: transparent;
 }
 
+<<<<<<< HEAD
 .inline {
 	display: inline;
 }
+=======
+#uppercase {
+	text-transform: uppercase;
+}
+
+.inline {
+	display: inline;
+}
+>>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5

@@ -1,16 +1,5 @@
 h2 Page to list all business profiles
 
-= form_tag business_profiles_path, class: "form-inline", method: :get do
-  .form-group
-    = text_field_tag :query, params[:query], class: "form-control"
-  '
-  = submit_tag "Search", class: "btn btn-primary"
-  - if params[:query].present?
-    '
-    = link_to "clear", business_profiles_path
-
-end
-
 ul.profile-index
   .container
     - @business_profiles.each do |business_profile|

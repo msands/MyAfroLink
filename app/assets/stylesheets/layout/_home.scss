@@ -8,7 +8,11 @@
 //Call To Action//
 .section-callToAction {
 	font-family: avantgardemditc-bold;
+<<<<<<< HEAD
 	margin: 15% 0 4.5% 0;
+=======
+	margin: 5% 0 4.5% 0;
+>>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
 	width: 100%;
 
 	h1 {
@@ -66,6 +70,7 @@
 				height: 49px;
 
 			}
+<<<<<<< HEAD
 		}
 
 		.inputSearch {
@@ -84,6 +89,26 @@
 			vertical-align:top;
 			@include border-radius(3px);
 			border-bottom: 2px solid $green-border;
+=======
+
+			.inputSearch {
+				width: 35%;
+				height: 49px;
+
+			}
+
+			button {
+				margin: 0 25px 0 -4px;
+				font-size: 14px;
+				background-color: $green-button;
+				border: none;
+				color: #fff;
+				padding: 15px 50px 14.5px 50px;
+				vertical-align:top;
+				@include border-radius(3px);
+				border-bottom: 2px solid $green-border;
+			}
+>>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
 		}
 	}
 }
@@ -118,7 +143,11 @@
 					border-radius: 15px;
 				  	//border: 3px solid #808080;
 				  }
+<<<<<<< HEAD
 				}
+=======
+			}
+>>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
 				.modal-body {
 					.form-control {
 						margin-top: 23px;

@@ -1,11 +1,12 @@
 section.section-callToAction.text-center
   .container
     h1 AFRICA AROUND YOU
-    a href="user_profiles/list_business_form.html"  LIST YOUR BUSINESS
+    = link_to "LIST YOUR BUSINESS", new_business_profile_path
 section.section-search.text-center
   .container
     .row
       .col-md-12
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         form.search
           span.fa.fa-map-marker.fa-2x
@@ -16,10 +17,18 @@ section.section-search.text-center
         = form_tag business_profiles_path, class: "form-inline", method: :get do
           .form-group
             = text_field_tag :query, params[:query], class: "form-control text-center inputSearch", placeholder: "WHAT ARE YOU LOOKING FOR?", :size => "50"
+=======
+        = form_tag business_profiles_path, class: "form-inline", method: :get do
+          .form-group
+            = text_field_tag :query, params[:query], class: "form-control text-center", placeholder: "WHAT ARE YOU LOOKING FOR?", :size => "50"
+>>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
           '
           = submit_tag "Search", class: "btn btn-success"
           - if params[:query].present?
           '
           = link_to "clear", business_profiles_path
         end
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
