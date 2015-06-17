@@ -8,7 +8,7 @@ section.section-search.text-center
       .col-md-12
         = form_tag business_profiles_path, class: "form-inline", method: :get do
           .form-group
-            = text_field_tag :query, params[:query], class: "form-control text-center", placeholder: "WHAT ARE YOU LOOKING FOR?", :size => "50"
+            = text_field_tag :query, params[:query], class: "form-control text-center inputSearch", placeholder: "WHAT ARE YOU LOOKING FOR?", :size => "50"
           '
           = submit_tag "Search", class: "btn btn-success"
           - if params[:query].present?
