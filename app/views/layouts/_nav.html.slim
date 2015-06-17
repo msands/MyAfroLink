@@ -1,39 +1,13 @@
-<<<<<<< HEAD
-header.navbar.navbar-default.navbar-fixed-top
-  .container
-    .navbar-header
-      button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
-=======
 header.navbar.navbar-default
   .container
     .navbar-header
       button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"
->>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
         span.icon-bar
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-      a = link_to root_path
-        img src="assets/logo.png" /
-=======
       = link_to root_path do
         = image_tag "Logo_All White.png"
->>>>>>> Stashed changes
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      ul.nav.navbar-nav.navbar-right
-        li
-          = link_to "HOME", root_path
-        li
-          = link_to "SIGN UP", new_user_registration_path
-        li
-          = link_to "LOGIN", user_session_path
-        li
-          = link_to "HELP", help_path
-=======
-      = link_to root_path do
-        = image_tag "logo.png"
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         - if user_signed_in?
@@ -52,4 +26,3 @@ header.navbar.navbar-default
           li= link_to "SIGN UP", new_user_registration_path
           li= link_to "LOGIN", user_session_path
         li= link_to "HELP", help_path
->>>>>>> 5013cca9bcdb6dff02771e45ca37334b3be638d5
