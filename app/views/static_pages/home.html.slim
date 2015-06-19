@@ -1,20 +1,21 @@
-section.section-callToAction.text-center
-  .container
-    h1 AFRICA AROUND YOU
-    = link_to "LIST YOUR BUSINESS", new_business_profile_path
-section.section-search.text-center
-  .container
-    .row
-      .col-md-12
-        = form_tag business_profiles_path, class: "form-inline", method: :get do
-          .form-group
-            = text_field_tag :query, params[:query], class: "form-control text-center inputSearch", placeholder: "WHAT ARE YOU LOOKING FOR?", :size => "50"
-          '
-          = submit_tag "Search", class: "btn btn-success"
-          - if params[:query].present?
-          '
-          = link_to "clear", business_profiles_path
-        end
+.container-fluid
+  section.section-callToAction.text-center
+    .container
+      h1 AFRICA AROUND YOU
+      = link_to "LIST YOUR BUSINESS", new_business_profile_path
+  section.section-search.text-center
+    .container
+      .row
+        .col-md-12
+          = form_tag business_profiles_path, class: "form-inline", method: :get do
+            .form-group
+              = text_field_tag :query, params[:query], class: "form-control text-center inputSearch", placeholder: "WHAT ARE YOU LOOKING FOR?", :size => "50"
+            '
+            = submit_tag "Search", class: "btn btn-success"
+            - if params[:query].present?
+            '
+            = link_to "clear", business_profiles_path
+          end
 /! Sign Up Modal
 section
   #signup.modal.fade.signup aria-hidden="true" aria-labelledby="signupmodal" role="dialog" tabindex="-1"
