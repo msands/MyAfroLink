@@ -19,4 +19,5 @@
           = f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: 'Confirm Password'
   .actions.text-center
     = f.submit "CREATE ACCOUNT", class: 'btn btn-primary'
-= render "users/shared/links"
+  .signup-confirm.text-center
+    = render "users/shared/links"
