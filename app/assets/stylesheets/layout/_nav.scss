@@ -73,15 +73,16 @@
 						&:hover, &:focus {
 							color: $link-highlight;
 							background-image: none;
-							background-color: transparent;}}
-
-							.caret {
-								color: #fff;
-								margin-top: -27px;
-								margin-left: 45px;
-								transform: rotate(180deg);
-							}
+							background-color: transparent;
 						}
+					}
+					.caret {
+						color: #fff;
+						margin-top: -27px;
+						margin-left: 45px;
+						transform: rotate(180deg);
+					}
+				}
 //Primary Navigation - User Profile//
 .user-profile-nav {
 
@@ -89,9 +90,11 @@
 		>li >a {
 			color: #757575;
 			&:hover, &:focus {
-				color: $link-highlight;}}
-			}
+				color: $link-highlight;
+			}	
 		}
+	}
+}
 //Secondary Navigation//
 .navbar-secondary {
 	background-color: #383838;
@@ -102,8 +105,248 @@
 		>li >a {
 			background-color: transparent;
 			&:hover, &:focus {
-				background-color: #787878;}}
+				background-color: #787878;
 			}
 		}
+	}
+}
+
+//Modal//
+
+//Signup Modal//
+.signup {
+	.modal-dialog {
+		margin-top:  100px;
+		width: 650px;
+
+		.modal-content {
+			background-color: #333334;
+
+			.modal-header {
+				border-bottom: 1px solid #373638; 
+				.modal-title {
+					color: #fff;
+					padding: 20px 0 20px 0;
+				}
+				.close {
+					margin-top: -50px;
+					color: #808080;
+					text-shadow: 0 0 0 #808080;
+					width: 20px;
+					height: 27px;
+					padding: 0 2.5px;
+					font-size: 25px;
+					border-radius: 15px;
+					//border: 3px solid #808080;
+				}
+			}
+			.modal-body {
+				.form-control {
+					margin-top: 23px;
+					height: 44px;
+					background-color: #3c3c3e;
+					border: none;
+					color: #fff;
+				}
+
+				@include placeholder {
+					color: #fff;
+				}
+
+				label {
+					color: #808080;
+					display: block;
+					padding-top: 25px;
+				}
+
+				.col-md-12 {
+					padding: 0 30px;
+				}
+			}
+
+			.modal-footer {
+				border-top: 0px solid #373638;
+			}
+			.btn {
+				background-color: #8067b7;
+				border-color: transparent;
+				background: #8067b7;
+				box-shadow: none;
+				font-size: 11px;
+				margin: 30px 0 15px 0;
+				padding: 10px 25px;
+				border-radius: 35px;
+
+				@include link (#fff, #fff, #fff, #fff);
+			}
+
+			.signup-confirm {
+				color: #808080;
+				padding: 15px 0;
+				a {
+					color: #808080;
+					display: inline-block;
+				}
+			}
+		}
+	}		
+}
+
+//Login Modal//
+.login {
+	@include link (#fff, #fff, #fff, #fff);
+	.modal-dialog {
+		margin-top:  100px;
+		width: 650px;
+
+		.modal-content {
+			background-color: #fff;
+
+			.modal-header {
+				border-bottom: 1px solid #e2e2e2;
+				.modal-title {
+					color: #323133;
+					padding: 20px 0 20px 0; 
+				}
+				.close {
+					margin-top: -50px;
+					color: #343434;
+					text-shadow: 0 0 0 #343434;
+					width: 20px;
+					height: 27px;
+					padding: 0 2.5px;
+					font-size: 25px;
+					line-height: .2;
+					border-radius: 15px;
+					//border: 3px solid #343434;
+				}
+			}
+
+			.modal-body {
+				padding-top: 0px;
+				padding-bottom: 0px;
+
+				.form-group-left {
+					margin-left: 30px;
+				}
+
+				.form-control {
+					height: 44px;
+					background-color: #eaeaeb;
+					border: none;
+					color: #828283;
+					width: 90%;
+				}
+
+				@include placeholder {
+					color: #828283;
+				}
+
+				p {
+					padding-top: 27px;
+					margin-bottom: 0px;
+					color: #a5a5a5;
+				}
+
+				label {
+					color: #343434;
+					display: block;
+					padding-top: 20px;
+					padding-left: 0;
+				}
+
+				.remember{
+					margin-top: 40px;
+					.check-box {
+						color: #a5a5a5;
+					}
+
+					.check-box-label {
+						color: #a5a5a5;
+						display: inline;
+						padding-left: 10px;
+					}
+				}
+
+				.login-confirm {
+					color: #a5a5a5;
+					padding-bottom: 30px;
+					a {
+						color: #a5a5a5;
+					}
+				}
+
+				.btn {
+					background-color: #23a55a;
+					border-color: #23a55a;
+					background-image: none;
+					box-shadow: none;
+					color: #fff;
+					text-shadow: none;
+					width: 121px;
+					height: 40px;
+					border-radius: 35px;
+					font-size: 12px;
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+
+				.login-confirm {
+					color: #a5a5a5;
+					padding: 15px 0;
+					a {
+						color: #a5a5a5;
+						display: inline-block;
+					}
+				}
+
+				.btn-facebook {
+					background-color: #3b5998;
+					border-color: #3b5998;
+					background-image: none;
+					box-shadow: none;
+					color: #fff;
+					text-shadow: none;
+					width: 180px;
+					height: 40px;
+					border-radius: 35px;
+					font-size: 12px;
+					margin-top: 55px;
+
+					.fa-facebook {
+						margin-left: -40px;
+						margin-right: 30px;
+					}
+				}
+
+				.btn-google {
+					background-color: #d6d6d6;
+					border-color: #d6d6d6;
+					background-image: none;
+					box-shadow: none;
+					color: #fff;
+					text-shadow: none;
+					width: 180px;
+					height: 40px;
+					border-radius: 35px;
+					font-size: 12px;
+					margin-top: 20px;
+
+					.fa-google-plus {
+						margin-left: -40px;
+						margin-right: 30px;
+						color: #F44336;
+						font-size: 15px;
+					}
+				}
+			}
+
+			.modal-footer {
+				border-top: 0px;
+			}
+		}
+	}
+}
+
 
 

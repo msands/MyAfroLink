@@ -37,7 +37,8 @@ section
       .modal-content
         .modal-header
           h4.modal-title.text-center SIGN UP
-          button.close aria-label="Close" data-dismiss="modal" type="button"
+          button.signup.close aria-label="Close" data-dismiss="modal" type="button" 
+            span aria-hidden="true"  &times;
         .modal-body
           = render 'users/registrations/new'
         .modal-footer
@@ -48,6 +49,9 @@ section
     .modal-dialog
       .modal-content
         .modal-header
+          h4.login.modal-title.text-center LOGIN
+          button.login.close aria-label="Close" data-dismiss="modal" type="button" 
+            span aria-hidden="true"  &times;
         .modal-body
           = render 'users/sessions/new'
         .modal-footer
