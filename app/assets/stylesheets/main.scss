@@ -1,0 +1,39 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
+	Myafrolink
+	Author: Ashley Singleton
+	Version: 2.0
+*/
+
+//BASE - Base styles, variables, mixins, etc
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_reset.scss';
+@import 'base/_base.scss';
+
+//LAYOUTS - Individual page layout
+
+@import 'layout/_header.scss';
+@import 'layout/_nav.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_home.scss';
+@import 'layout/_about.scss';
+@import 'layout/_help.scss';
+@import 'layout/_terms.scss';
+@import 'layout/_privacy.scss';
+@import 'layout/_dashboard.scss';
+@import 'layout/_user_profile_view.scss';
+@import 'layout/_business_listing.scss';
+@import 'layout/_business_profile.scss';
+@import 'layout/_edit_profile.scss';
+@import 'layout/_list_business_form.scss';
+@import 'layout/_search_favorites.scss';
+@import 'layout/_search_results.scss';
+
+//MODULES - Individual site components
+
+@import 'modules/_typography.scss';
+@import 'modules/_components.scss';

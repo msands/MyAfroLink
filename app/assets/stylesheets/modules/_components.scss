@@ -1,0 +1,40 @@
+//Components//
+
+//Font Awesome Icons//
+.fa-map-marker {
+		padding-right: 5px;
+}
+
+.fa-clock-o {
+		padding-right: 5px;
+}
+
+//Star Rating//
+.rating {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	text-align: left;
+	font-size: 25px;
+	color: #fbc845;
+	padding-bottom: 20px;
+}
+.rating > span {
+	display: inline-block;
+	width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+	content: "\2605";
+	position: absolute;
+	color: #fbc845;
+}
+
+//Google Map//
+#map-canvas { 
+	height: 400px; 
+	margin-bottom: 150px;
+}
+
+
+
+

@@ -1,7 +1,4 @@
 class BusinessProfile < ActiveRecord::Base
-  include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
-
   searchkick
 
   CATEGORIES = ["Food", "Jewelry", "Clothing", "Grocery"]

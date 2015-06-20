@@ -1,0 +1,31 @@
+//User Profile Dashboard//
+.section-dashboard {
+	color: #757575;
+	height:500px;
+	margin-top: 50px;
+
+	.panel-default {
+		margin-top: 16.5px;
+		border-radius: 0px;
+
+		.panel-heading {
+			background-color: #dadada;
+			border-color: transparent;
+			border: 0px;
+			background: #dadada;
+			box-shadow: none;
+			border-radius: 0px;
+
+			.panel-title {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				font-size: 14px;
+				color: #757575;
+			}
+		}
+
+		.panel-body {
+			height: 318px;
+		}
+	}
+}
