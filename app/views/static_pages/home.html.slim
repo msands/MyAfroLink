@@ -16,24 +16,3 @@
             '
             = link_to "clear", business_profiles_path
           end
-/! Sign Up Modal
-section
-  #signup.modal.fade.signup aria-hidden="true" aria-labelledby="signupmodal" role="dialog" tabindex="-1"
-    .modal-dialog
-      .modal-content
-        .modal-header
-          h4.modal-title.text-center SIGN UP
-          button.close aria-label="Close" data-dismiss="modal" type="button"
-        .modal-body
-          = render 'users/registrations/new'
-        .modal-footer
-
-/! Login Modal
-section
-  #login.modal.fade.login aria-hidden="true" aria-labelledby="loginmodal" role="dialog" tabindex="-1"
-    .modal-dialog
-      .modal-content
-        .modal-header
-        .modal-body
-          = render 'users/sessions/new'
-        .modal-footer
