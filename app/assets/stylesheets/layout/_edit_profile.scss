@@ -72,22 +72,35 @@
 						border-radius: 0px;
 					}
 
-					.width-gender, .width-tribe {
+					.width-gender {
 						width: 220px;
 					}
 
-					.width-day {
-						width: 93px;
-						margin-right: 10px;
+					.width-tribe {
+						width: 220px;
 					}
-					.width-month {
-						width: 130px;
-						margin-right: 10px;
+
+					#user_profile_birthday_2i, #user_profile_birthday_3i, #user_profile_birthday_1i {
+						margin-top: 82.5px;
+						display: inline;
+						height: 44px;
+						width: 23%;
+						background-color: #fff;
+						font-size: 13px;
+						border: 1px solid #ececec;
+						border-radius: 0px;
 					}
-					.width-year {
-						width: 100px;
-						margin-right: 10px;
-					}
+				}
+
+				.btn {
+					background-color: #8067b7;
+					border-color: transparent;
+					background: #8067b7;
+					box-shadow: none;
+					font-size: 11px;
+					margin: 25px 0 0 0;
+					padding: 10px 55px;
+					border-radius: 35px;
 				}
 			}
 		}
@@ -106,19 +119,19 @@
 		}
 	}
 
-	button {
+	.btn {
 		background-color: #8067b7;
 		border-color: transparent;
 		background: #8067b7;
 		box-shadow: none;
 		font-size: 11px;
-		margin: 0px 0 544px 0;
+		margin-top: 25px;
 		padding: 10px 55px;
 		border-radius: 35px;
 	}
 }
 
 .date-select {
-    display: inline-block;
-    width: 30%;
+	display: inline-block;
+	width: 30%;
 }
