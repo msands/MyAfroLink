@@ -61,7 +61,7 @@
 
 				.row {
 					label {
-						margin-top: 50px; 
+						margin-top: 50px;
 						display: block;
 					}
 					select {
@@ -116,4 +116,9 @@
 		padding: 10px 55px;
 		border-radius: 35px;
 	}
+}
+
+.date-select {
+    display: inline-block;
+    width: 30%;
 }
