@@ -1,0 +1,100 @@
+//Home Page//
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body{
+	padding: 0;
+	margin-bottom: 60px;
+}
+
+.alert {
+	padding: 0;
+	border: 0;
+}
+
+.container-fluid {
+	padding: 0;
+	margin: 0;
+	//Call To Action//
+	.section-callToAction {
+		font-family: avantgardemditc-bold;
+		margin: 5% 0 4.5% 0;
+		width: 100%;
+
+		h1 {
+			font-size: 7.5vw;
+			color: #fff;
+			margin-bottom: 20px;
+		}
+
+		a {
+			color: #fff;
+			background-color: $bg-grey;
+			margin: 0 0 5% 0;
+			padding: 2% 4%;
+			text-decoration: none;
+			font-size: 1.2vw;
+		}
+	}
+
+	//Search Form//
+	.section-search {
+		background-color: $bg-dark;
+		height: 100px;
+		padding-top: 21px;
+
+		.container {
+			margin-top: 5px;
+
+			.search {
+				position: relative;
+
+				@include placeholder {
+					color: #979797;
+				}
+
+				.form-control {
+					background-color: #fff;
+					color: #000;
+					font-size: 13px;
+					border: 1.7px solid #b0b0b0;
+					border-radius: 0px;
+					display: inline;
+				}
+
+				//Font Awesome Location Marker//
+				.fa-map-marker {
+					position: relative;
+					left: 55px;
+					top: 3px;
+				}
+
+				.inputLocation {
+					margin-right: -5px;
+					padding: 0 20px 0 55px;
+					width: 23%;
+					height: 49px;
+				}
+			}
+
+			.inputSearch {
+				width: 100%;
+				height: 50px;
+			}
+
+			.btn {
+				margin: 0 25px 0 -4px;
+				font-size: 14px;
+				background-color: $green-button;
+				border: none;
+				color: #fff;
+				padding: 15px 50px 14.5px 50px;
+				vertical-align:top;
+				@include border-radius(3px);
+				border-bottom: 2px solid $green-border;
+			}
+		}
+	}
+}
