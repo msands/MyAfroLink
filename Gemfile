@@ -27,6 +27,7 @@ gem 'omniauth-google-oauth2', '~> 0.2.6'
 
 # Search
 gem 'searchkick', '~> 0.9.0'
+gem 'twitter-typeahead-rails', '~> 0.10.5'
 
 # Setting environment variables
 gem 'figaro', '~> 1.1.1'
