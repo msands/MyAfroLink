@@ -1,8 +1,8 @@
 .section-list-business-form {
-	height: 650px;
 	padding-top: 50px;
 	.container {
-		width: 550px;
+		width: 100%;
+		padding: 0 50px;
 
 		h5 {
 			color: #505050;
@@ -12,7 +12,7 @@
 
 		.line {
 			border: 1px solid #f4f4f4;
-			width: 530px;
+			width: 100%;
 
 		}
 
@@ -37,6 +37,13 @@
 				box-shadow: none;
 			}
 
+			.time {
+				height: 34px;
+				width: 30%;
+				font-size: 14px;
+				margin-left: 10px;
+			}
+
 			textarea {
 				background-color: #f6f6f6;
 				border-color: #dfdfdf;
@@ -44,7 +51,7 @@
 				box-shadow: none;
 			}
 
-			button {
+			.btn {
 				background-color: #00b8ac;
 				border-color: transparent;
 				background: #00b8ac;
