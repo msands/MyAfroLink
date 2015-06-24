@@ -66,7 +66,7 @@
 					border-top-color: #fff;
 					background-color: $bg-dark;
 					font-size: 11px;
-					padding: 0px 20px 75px 10px;
+					padding: 15px 0px 75px 0px;
 
 					>li >a {
 						color: #fff;
@@ -86,6 +86,12 @@
 //Primary Navigation - User Profile//
 .user-profile-nav {
 
+	.navbar-brand { 
+		img {
+			content: asset-url('Logo_All_Black.png');
+		}
+	}
+
 	.navbar-nav {
 		>li >a {
 			color: #757575;
@@ -95,6 +101,12 @@
 		}
 	}
 }
+
+.navbar-default .navbar-nav .open > a:hover, .navbar-default .navbar-nav .open > a:focus {
+	color: #757575;
+	background-color: transparent;
+}
+
 //Secondary Navigation//
 .navbar-secondary {
 	background-color: #383838;
