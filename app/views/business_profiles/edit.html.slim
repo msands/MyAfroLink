@@ -8,9 +8,9 @@ h2 Update your business listing
       = f.input :city, placeholder: 'Business City, State'
       = f.input :website, placeholder: 'www.yourbusiness.com'
       = f.input :email, placeholder: 'owner@business.com'
-      = f.time_select :time_open, { :ampm => true }
+      = f.time_select :time_open, { :ampm => true, :minute_step => 15 }
       | --
-      =< f.time_select :time_close, { :ampm => true }
+      =< f.time_select :time_close, { :ampm => true, :minute_step => 15 }
       = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
       = f.input :description, as: :text, placeholder: 'What does your business do/offer?'
       = f.file_field :image

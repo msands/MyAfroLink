@@ -5,7 +5,7 @@ section.section-list-business-form
       .container-fluid
         .row
         .form-group.col-md-1
-        .form-group.col-md-10 
+        .form-group.col-md-10
           .line
           = simple_form_for(@business_profile, html: { class: 'form-horizontal' }) do |f|
             .form-group.col-md-12
@@ -19,11 +19,11 @@ section.section-list-business-form
             .form-group.col-md-6
               = f.input :email, placeholder: 'owner@business.com'
             .form-group.col-md-6
-              label Open 
-              = f.time_select :time_open, { :ampm => true }, class: 'time text-center'
+              label Open
+              = f.time_select :time_open, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
             .form-group.col-md-6
-              label Close 
-              =< f.time_select :time_close, { :ampm => true }, class: 'time text-center'
+              label Close
+              =< f.time_select :time_close, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
             .form-group.col-md-12
               = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
               = f.input :description, as: :text, placeholder: 'What does your business do/offer?'
