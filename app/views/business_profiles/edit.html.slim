@@ -1,17 +1,33 @@
-h2 Update your business listing
-
-.row
-  .col-md-12
-    = simple_form_for(@business_profile, html: { class: 'form-horizontal' }) do |f|
-      = f.input :name, placeholder: 'Buiness Name'
-      = f.input :address, placeholder: 'Business Street Address'
-      = f.input :city, placeholder: 'Business City, State'
-      = f.input :website, placeholder: 'www.yourbusiness.com'
-      = f.input :email, placeholder: 'owner@business.com'
-      = f.time_select :time_open, { :ampm => true }
-      | --
-      =< f.time_select :time_close, { :ampm => true }
-      = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
-      = f.input :description, as: :text, placeholder: 'What does your business do/offer?'
-      = f.file_field :image
-      = f.submit "Update business listing", class: 'btn btn-block btn-success'
+section.section-list-business-form
+  .container
+    h5.text-center UPDATE YOUR BUSINESS LISTING
+    form
+      .container-fluid
+        .row
+        .form-group.col-md-1
+        .form-group.col-md-10
+          .line
+          = simple_form_for(@business_profile, html: { class: 'form-horizontal' }) do |f|
+            .form-group.col-md-12
+              = f.input :name, placeholder: 'Business Name', class: 'form-control'
+            .form-group.col-md-6
+              = f.input :address, placeholder: 'Business Street Address'
+            .form-group.col-md-6
+              = f.input :city, placeholder: 'Business City, State'
+            .form-group.col-md-6
+              = f.input :website, placeholder: 'www.yourbusiness.com'
+            .form-group.col-md-6
+              = f.input :email, placeholder: 'owner@business.com'
+            .form-group.col-md-6
+              label Open
+              = f.time_select :time_open, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
+            .form-group.col-md-6
+              label Close
+              =< f.time_select :time_close, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
+            .form-group.col-md-12
+              = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
+              = f.input :description, as: :text, placeholder: 'What does your business do/offer?'
+            .form-group.col-md-12
+              = f.file_field :image
+              = f.submit " UPDATE LISTING", class: 'btn btn-primary'
+        .form-group.col-md-1

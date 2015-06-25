@@ -1,5 +1,5 @@
-//Edit User Profile//
-.section-edit-profile {
+//Create User Profile//
+.section-create-profile {
 	color: #757575;
 	margin-top: 50px;
 
@@ -92,10 +92,6 @@
 					}
 				}
 
-				i {
-					padding-left: 5px;
-				}
-
 				.btn {
 					background-color: #8067b7;
 					border-color: transparent;
@@ -104,25 +100,6 @@
 					font-size: 11px;
 					margin: 25px 0 0 0;
 					padding: 10px 55px;
-					border-radius: 35px;
-				}
-
-				h3 {
-					margin-top: 97px;
-				}
-
-				.cancel_description {
-					margin: 19px 0 0 0;
-				}
-
-				.btn-cancel {
-					background-color: #e60000;
-					border-color: transparent;
-					background: #e60000;
-					box-shadow: none;
-					font-size: 11px;
-					margin: 25px 0 0 0;
-					padding: 10px 29px;
 					border-radius: 35px;
 				}
 			}
