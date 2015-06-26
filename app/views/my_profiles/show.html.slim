@@ -2,8 +2,8 @@ section.section-user-profile-view
   .container
     .row
       .col-md-3
-        p.image-responsive
-          =<> image_tag @user_profile.image.url(:medium)
+        p
+          =<> image_tag @user_profile.image.url(:medium), class: 'img-responsive'
         p.username
           =<> @user_profile.first_name
           =<> @user_profile.last_name
