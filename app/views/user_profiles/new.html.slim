@@ -1,26 +1,26 @@
 .section-create-profile
 	.container
 		.row
-		  .col-md-12
-			.panel.panel-default
-			  .panel-heading
-			    h3.panel-title CREATE YOUR PROFILE
-			  .panel-body
-			    = simple_form_for(@user_profile, html: { class: 'form-group-left' }) do |f|
-				    = f.input :first_name, class: 'form-control'
-				    = f.input :last_name, class: 'form-control'
-			      	.row
-			      		.form-group.col-md-4
-			      			.btn-group
-			      				.width-gender
-				      				= f.input :gender, collection: UserProfile::GENDERS, as: :select, class: 'width-gender'
-			      		.form-group.col-md-8
-			      	  		= f.date_select :birthday, as: :date, order: [:month, :day, :year]
-				  	.row
-                		.form-group.col-md-4
-                			.btn-group
-                				.width-tribe
-				      				= f.input :tribe, collection: UserProfile::TRIBES, as: :select
-				      = f.label :image, "Upload Profile Photo"
-			      	= f.file_field :image
-				 	= f.submit "Create Profile", class: "btn btn-success"
+			.col-md-12
+				.panel.panel-default
+					.panel-heading
+						h3.panel-title CREATE YOUR PROFILE
+					.panel-body
+						= simple_form_for(@user_profile, html: { class: 'form-group-left' }) do |f|
+							= f.input :first_name, class: 'form-control'
+							= f.input :last_name, class: 'form-control'
+							.row
+								.form-group.col-md-4
+									.btn-group
+										.width-gender
+											= f.input :gender, collection: UserProfile::GENDERS, as: :select, class: 'width-gender'
+								.form-group.col-md-8
+									= f.date_select :birthday, as: :date, order: [:month, :day, :year]
+								.row
+									.form-group.col-md-4
+										.btn-group
+											.width-tribe
+												= f.input :tribe, collection: UserProfile::TRIBES, as: :select
+								= f.label :image, "Upload Profile Photo"
+								= f.file_field :image
+								= f.submit "Create Profile", class: "btn btn-success"
