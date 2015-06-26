@@ -13,7 +13,5 @@
               = text_field_tag :query, params[:query], class: "form-control text-center input-search", placeholder: "WHAT ARE YOU LOOKING FOR?"
               span.input-group-btn
                 = button_tag "SEARCH", class: "btn btn-success"
-            - if params[:query].present?
-            = link_to "clear", business_profiles_path
           end
         .col-md-3
