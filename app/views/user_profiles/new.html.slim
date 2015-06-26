@@ -21,5 +21,6 @@
                 			.btn-group
                 				.width-tribe
 				      				= f.input :tribe, collection: UserProfile::TRIBES, as: :select
+				      = f.label :image, "Upload Profile Photo"
 			      	= f.file_field :image
 				 	= f.submit "Create Profile", class: "btn btn-success"

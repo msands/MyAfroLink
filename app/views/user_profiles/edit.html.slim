@@ -2,7 +2,7 @@
   .container
     .row
       .col-md-3
-      	= image_tag "profile-pic.png"
+      	= image_tag @user_profile.image.url(:medium)
       .col-md-9
         .panel.panel-default
           .panel-heading
@@ -23,6 +23,6 @@
                 		.btn-group
                 			.width-tribe
 		     					= f.input :tribe, collection: UserProfile::TRIBES, as: :select
-		     
+		        = f.label :image, "Upload Profile Photo"
 		      	= f.file_field :image
 		      	= f.submit "Update Profile", class: 'btn btn-success'
