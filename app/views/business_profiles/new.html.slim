@@ -1,9 +1,8 @@
 section.section-list-business-form
   .container
-    h5.text-center LIST YOUR BUSINESS
-    form
-      .container-fluid
-        .row
+    h5.text-center UPDATE YOUR BUSINESS LISTING
+    .container-fluid
+      .row
         .form-group.col-md-1
         .form-group.col-md-10
           .line
@@ -29,5 +28,5 @@ section.section-list-business-form
               = f.input :description, as: :text, placeholder: 'What does your business do/offer?'
             .form-group.col-md-12
               = f.file_field :image
-              = f.submit "LIST", class: 'btn btn-primary'
+              = f.submit " UPDATE LISTING", class: 'btn btn-primary'
         .form-group.col-md-1

@@ -1,9 +1,8 @@
 section.section-list-business-form
   .container
     h5.text-center UPDATE YOUR BUSINESS LISTING
-    form
-      .container-fluid
-        .row
+    .container-fluid
+      .row
         .form-group.col-md-1
         .form-group.col-md-10
           .line
@@ -19,10 +18,10 @@ section.section-list-business-form
             .form-group.col-md-6
               = f.input :email, placeholder: 'owner@business.com'
             .form-group.col-md-6
-              label Open
+              = f.label "Open"
               = f.time_select :time_open, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
             .form-group.col-md-6
-              label Close
+              = f.label "Close"
               =< f.time_select :time_close, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
             .form-group.col-md-12
               = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
