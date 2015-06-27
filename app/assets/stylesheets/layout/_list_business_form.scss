@@ -1,3 +1,4 @@
+
 .section-list-business-form {
 	padding-top: 50px;
 	.container {
@@ -19,49 +20,56 @@
 		.container-fluid {
 			margin-top: 18px;
 
-			label {
-				color: #505050;
-				margin-top: 12px;
-			}
+			.form-horizontal {
 
-			input {
-				background-color: #f6f6f6;
-				border-color: #dfdfdf;
-				box-shadow: none;
-			}
+				.form-group {
+					margin: 7px 0;
+				}
 
-			select {
-				background-color: #f6f6f6;
-				border-color: #dfdfdf;
-				color: #a5a5a5;
-				box-shadow: none;
-			}
+				label {
+					color: #505050;
+					margin-top: 12px;
+				}
 
-			.time {
-				height: 34px;
-				width: 30%;
-				font-size: 14px;
-				margin-left: 10px;
-			}
+				input {
+					background-color: #f6f6f6;
+					border-color: #dfdfdf;
+					box-shadow: none;
+				}
 
-			textarea {
-				background-color: #f6f6f6;
-				border-color: #dfdfdf;
-				color: #a5a5a5;
-				box-shadow: none;
-			}
+				select {
+					background-color: #f6f6f6;
+					border-color: #dfdfdf;
+					color: #a5a5a5;
+					box-shadow: none;
+				}
 
-			.btn {
-				background-color: #00b8ac;
-				border-color: transparent;
-				background: #00b8ac;
-				box-shadow: none;
-				font-size: 11px;
-				margin: 30px 0 111px 0;
-				padding: 10px 45px;
-				border-radius: 35px;
+				.time {
+					height: 34px;
+					width: 30%;
+					font-size: 14px;
+					margin-left: 10px;
+				}
 
-			@include link(#fff, #fff, #fff, #fff);
+				textarea {
+					background-color: #f6f6f6;
+					border-color: #dfdfdf;
+					color: #a5a5a5;
+					box-shadow: none;
+				}
+
+				.btn {
+					background-color: #00b8ac;
+					border-color: transparent;
+					background: #00b8ac;
+					box-shadow: none;
+					font-size: 11px;
+					margin: 30px 0 111px 0;
+					padding: 10px 45px;
+					border-radius: 35px;
+
+					@include link(#fff, #fff, #fff, #fff);
+				}
 			}
 		}
 	}
