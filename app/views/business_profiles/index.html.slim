@@ -1,10 +1,10 @@
 section.section-businesses
   .container
-		h2 Business Listing
+  h2 Business Listing
 
-		ul.profile-index
-	    - @business_profiles.each do |business_profile|
-		      .col-md-4
-			      li
-			        = image_tag business_profile.image.url(:small)
-			        =<> link_to business_profile.name, business_profile
+  ul.profile-index
+    - @business_profiles.each do |business_profile|
+      .col-md-4
+        li
+          = image_tag business_profile.image.url(:small)
+          =<> link_to business_profile.name, business_profile
