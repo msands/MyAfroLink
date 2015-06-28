@@ -1,8 +1,10 @@
-h2 Page to list all business profiles
-
-ul.profile-index
+section.section-businesses
   .container
-    - @business_profiles.each do |business_profile|
-      li
-        = image_tag business_profile.image.url(:small)
-        =<> link_to business_profile.name, business_profile
+		h2 Business Listing
+
+		ul.profile-index
+	    - @business_profiles.each do |business_profile|
+		      .col-md-4
+			      li
+			        = image_tag business_profile.image.url(:small)
+			        =<> link_to business_profile.name, business_profile
