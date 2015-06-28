@@ -1,40 +1,43 @@
-h2 Business Profiles
+.section-business-profile
+  =<> image_tag @business_profile.image.url(:large), class: 'cover_image'
+  .grey-background
+  .container
+    .row.business-information
+      .col-xs-6.col-md-2
+      .col-xs-12.col-md-10
+        p.business_name
+          =<> @business_profile.name
 
-p
-  | Business Photo:
-  =<> image_tag @business_profile.image.url(:large)
+        p
+          =< @business_profile.address
+          |,
+          =<> @business_profile.city
 
-p
-  | Business Name:
-  =<> @business_profile.name
+        p
+          =<> @business_profile.time_open.strftime('%I:%M %p')
+          | - 
+          =<> @business_profile.time_close.strftime('%I:%M %p')
 
-p
-  | Business Address:
-  =< @business_profile.address
-  |,
-  =<> @business_profile.city
+        p
+          =<> @business_profile.category
 
-p
-  | Website:
-  =<> link_to @business_profile.website, "http://#{@business_profile.website}", target: "_blank"
+    .business-description
+      .row
+        .col-xs-6.col-md-2
+        .col-xs-12.col-md-10
+          h2 About Business
+          p
+            | 
+            =<> @business_profile.description
+          h4 Contact Business
+          p
+            =<> link_to @business_profile.website, "http://#{@business_profile.website}", target: "_blank"
 
-p
-  | Email address:
-  =<> mail_to @business_profile.email, @business_profile.email
-
-p
-  | Business hours:
-  =<> @business_profile.time_open.strftime('%I:%M %p')
-  | --
-  =<> @business_profile.time_close.strftime('%I:%M %p')
-
-p
-  | Business type:
-  =<> @business_profile.category
-
-p
-  | Business description:
-  =<> @business_profile.description
-
-- if @business_profile.user == current_user
-  = link_to "Edit Business", edit_business_profile_path, class: 'btn btn-block btn-success'
+          p
+            =<> mail_to @business_profile.email, @business_profile.email
+    .edit-business  
+      .row
+        .col-xs-6.col-md-2
+        .col-xs-12.col-md-10
+          - if @business_profile.user == current_user
+            = link_to "EDIT BUSINESS", edit_business_profile_path, class: 'btn btn-success'

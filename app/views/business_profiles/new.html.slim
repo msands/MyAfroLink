@@ -1,6 +1,6 @@
 section.section-list-business-form
   .container
-    h5.text-center UPDATE YOUR BUSINESS LISTING
+    h5.text-center LIST YOUR BUSINESS
     .container-fluid
       .row
         .form-group.col-md-1
@@ -27,6 +27,7 @@ section.section-list-business-form
               = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
               = f.input :description, as: :text, placeholder: 'What does your business do/offer?'
             .form-group.col-md-12
+              = f.label :image, "Upload Business Photo"
               = f.file_field :image
-              = f.submit " UPDATE LISTING", class: 'btn btn-primary'
+              = f.submit "UPDATE LISTING", class: 'btn btn-primary'
         .form-group.col-md-1

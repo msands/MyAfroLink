@@ -129,8 +129,6 @@
 .signup {
 	.modal-dialog {
 		margin-top:  100px;
-		width: 650px;
-
 		.modal-content {
 			background-color: #333334;
 
@@ -209,8 +207,6 @@
 	@include link (#fff, #fff, #fff, #fff);
 	.modal-dialog {
 		margin-top:  100px;
-		width: 650px;
-
 		.modal-content {
 			background-color: #fff;
 

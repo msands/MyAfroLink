@@ -2,8 +2,8 @@ section.section-user-profile-view
   .container
     .row
       .col-md-3
-        p
-          =<> image_tag @user_profile.image.url(:medium)
+        .profile-pic
+          =<> image_tag @user_profile.image.url(:medium), class: 'img-responsive'
         p.username
           =<> @user_profile.first_name
           =<> @user_profile.last_name
@@ -19,52 +19,10 @@ section.section-user-profile-view
           =<> link_to "EDIT PROFILE", edit_user_profile_path(current_user.user_profile), class: 'edit_profile_border'
       .col-md-9
         /! Introduction and User Businesses
-        .rating
-          span ☆
-          span ☆
-          span ☆
-          span ☆
-          span ☆
         .white-background
-          h3 HI EVERYONE!
-          p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          h3 INTRODUCTION
+          p Write a brief description about yourself and how you got started with your businesses.  
         h2
-          | BUSINESSES (2)
+          | BUSINESSES
         = image_tag "User Profile View/flourandwater.png"
         = image_tag "boulevard.png"
-        h2
-          | REVIEWS (33)
-    /! Reviews
-    .row
-      .col-md-3
-        = image_tag "avatar-review.png", class: "pull-right"
-      .col-md-9
-        .rating
-          span ☆
-          span ☆
-          span ☆
-          span ☆
-          span ☆
-        p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-    .row
-      .col-md-3
-        = image_tag "avatar-review.png", class: "pull-right"
-      .col-md-9
-        .rating
-          span ☆
-          span ☆
-          span ☆
-          span ☆
-          span ☆
-        p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-    .row
-      .col-md-3
-        = image_tag "avatar-review.png", class: "pull-right"
-      .col-md-9
-        .rating
-          span ☆
-          span ☆
-          span ☆
-          span ☆
-          span ☆
-        p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
