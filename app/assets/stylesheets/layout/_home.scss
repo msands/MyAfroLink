@@ -6,7 +6,8 @@ html {
 
 body{
 	padding: 0;
-	margin-bottom: 60px;
+	width: 100%;
+	height: 100%;
 }
 
 .alert {
@@ -14,87 +15,109 @@ body{
 	border: 0;
 }
 
-.container-fluid {
-	padding: 0;
-	margin: 0;
-	//Call To Action//
-	.section-callToAction {
-		font-family: avantgardemditc-bold;
-		margin: 3.5% 0;
+.header {
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	.text-vertical-center {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
 
-		h1 {
-			font-size: 8.5vw;
-			color: #fff;
-			margin-bottom: 3px;
+		//Call To Action//
+		.section-callToAction {
+			font-family: avantgardemditc-bold;
+			margin: 3.5% 0;
+
+			h1 {
+				font-size: 8.5vw;
+				color: #fff;
+				margin-bottom: 3px;
+				@media (max-width: 767px) {
+					font-size: 15.5vw;
+				}
+			}
+
+			a {
+				color: #fff;
+				font-size: 1.5em;
+				background-color: $bg-grey;
+				text-decoration: none;
+			}
+
+			.btn-lg {
+				border-radius: 0;
+				padding: 15px 25px;
+				@media (max-width: 767px) {
+					padding: 10px 15px;
+				}
+			}
+
+			.btn-default {
+				border-color: transparent;
+				border: 0;
+			}
 		}
 
-		a {
-			color: #fff;
-			background-color: $bg-grey;
-			padding: 2% 4%;
-			text-decoration: none;
-		}
+		//Search Form//
+		.section-search {
+			background-color: $bg-dark;
+			height: 100px;
+			padding-top: 21px;
 
-		.btn-lg {
-			border-radius: 0;
-		}
+			.container {
+				margin-top: 5px;
 
-		.btn-default {
-			border-color: transparent;
-			border: 0;
-		}
-	}
+				.input-group {
+					@include placeholder {
+						color: #979797;
+					}
 
-	//Search Form//
-	.section-search {
-		background-color: $bg-dark;
-		height: 100px;
-		padding-top: 21px;
+					.form-control {
+						background-color: #fff;
+						color: #000;
+						font-size: 13px;
+						border: 1.7px solid #b0b0b0;
+						border-radius: 0px;
+						display: inline;
+					}
 
-		.container {
-			margin-top: 5px;
+					//Font Awesome Location Marker//
+					.fa-map-marker {
+						position: relative;
+						left: 55px;
+						top: 3px;
+					}
 
-			.input-group {
-				@include placeholder {
-					color: #979797;
+					.inputLocation {
+						margin-right: -5px;
+						padding: 0 20px 0 55px;
+						width: 23%;
+						height: 49px;
+					}
 				}
 
-				.form-control {
-					background-color: #fff;
-					color: #000;
-					font-size: 13px;
-					border: 1.7px solid #b0b0b0;
-					border-radius: 0px;
-					display: inline;
-				}
-
-				//Font Awesome Location Marker//
-				.fa-map-marker {
-					position: relative;
-					left: 55px;
-					top: 3px;
-				}
-
-				.inputLocation {
-					margin-right: -5px;
-					padding: 0 20px 0 55px;
-					width: 23%;
+				.input-search {
 					height: 49px;
 				}
-			}
 
-			.input-search {
-				height: 49px;
-			}
+				button {
+					font-size: 14px;
+					background-color: $green-button;
+					border: none;
+					color: #fff;
+					padding: 14.5px 50px 14.5px 50px;
+					@include border-radius(3px);
+					border-bottom: 2px solid $green-border;
+					@media (max-width: 767px) {
+						padding: 14.5px 8px 14.5px 8px;
+					}
 
-			button {
-				font-size: 14px;
-				background-color: $green-button;
-				border: none;
-				color: #fff;
-				padding: 15px 50px 14.5px 50px;
-				@include border-radius(3px);
-				border-bottom: 2px solid $green-border;
+					@media (max-width: 480px) {
+						padding: 14.5px 5px 14.5px 5px;
+					}
+				}
 			}
 		}
 	}
