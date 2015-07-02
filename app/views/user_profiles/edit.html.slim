@@ -23,6 +23,9 @@
                     .btn-group
                       .width-tribe
                         = f.input :tribe, collection: UserProfile::TRIBES, as: :select
+                .row
+                  .form-group.col-md-8
+                    = f.input :description, placeholder: "Write a brief description about yourself and how you got started with your business.", class: "form-control"
                 = f.label :image, "Change Profile Photo"
                 = f.file_field :image
                 = f.submit "Update Profile", class: 'btn btn-success'
