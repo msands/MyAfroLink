@@ -26,6 +26,6 @@ section.section-user-profile-view
         h2
           | BUSINESSES
         li
-          - user_business.each do |user_business|
+          - user_businesses.each do |user_business|
             = image_tag user_business.image.url(:medium)
             =<> link_to user_business.name, @business_profile

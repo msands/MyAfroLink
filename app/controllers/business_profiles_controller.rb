@@ -45,6 +45,12 @@ class BusinessProfilesController< ApplicationController
 
   private
 
+  helper_method :business_owner
+
+  def business_owner
+    @business_profile.user if @business_profile.present?
+  end
+
   def business_profile_params
     params.require(:business_profile).permit(
       :name,
