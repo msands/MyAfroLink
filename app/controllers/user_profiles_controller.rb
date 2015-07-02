@@ -49,6 +49,7 @@ class UserProfilesController < ApplicationController
       :gender,
       :birthday,
       :tribe,
+      :description,
       :image
     )
   end
