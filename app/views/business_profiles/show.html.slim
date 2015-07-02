@@ -4,6 +4,10 @@
   .container
     .row.business-information
       .col-xs-6.col-md-2
+        p
+          |Business Owner
+          br
+          = link_to business_owner.display_name, user_profile_path(business_owner.user_profile)
       .col-xs-12.col-md-10
         p.business_name
           =<> @business_profile.name
@@ -15,7 +19,7 @@
 
         p
           =<> @business_profile.time_open.strftime('%I:%M %p')
-          | - 
+          | -
           =<> @business_profile.time_close.strftime('%I:%M %p')
 
         p
@@ -27,7 +31,7 @@
         .col-xs-12.col-md-10
           h2 About Business
           p
-            | 
+            |
             =<> @business_profile.description
           h4 Contact Business
           p
@@ -35,7 +39,7 @@
 
           p
             =<> mail_to @business_profile.email, @business_profile.email
-    .edit-business  
+    .edit-business
       .row
         .col-xs-6.col-md-2
         .col-xs-12.col-md-10
