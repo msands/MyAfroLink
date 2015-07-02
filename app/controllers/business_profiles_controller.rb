@@ -4,7 +4,7 @@ class BusinessProfilesController< ApplicationController
 
   def index
     if params[:query].present?
-      @business_profiles = BusinessProfile.search(params[:query])
+      @business_profiles = BusinessProfile.search(params[:query], fields: [{ name: :word_middle }])
     else
       @business_profiles = BusinessProfile.all
     end

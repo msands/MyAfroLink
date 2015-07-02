@@ -26,6 +26,9 @@
 	.navbar-collapse {
 		padding-top: 3%;
 		border-color: #fff;
+		@media (max-width: 767px) {
+			background-color: rgba(185,185,185,0.8);
+		}
 	}
 
 	.navbar-toggle {
@@ -41,54 +44,78 @@
 			text-shadow: none;
 			&:hover, &:focus {
 				color: $link-highlight;
-				background-color: transparent;}}
-				.open >a {
-					background-color: transparent;
-					background: transparent;
-					box-shadow: none;
-					&:hover, &:focus {
-						color: #fff;
-						background-color: transparent;}}
-					}
+				background-color: transparent;
+			}
+		}
+		.open {
+			.dropdown-menu > li > a {
+				color: #fff;
+				height: 250%;
+			}
+		}
+		.open >a {
+			background-color: transparent;
+			background: transparent;
+			box-shadow: none;
+			&:hover, &:focus {
+				color: #fff;
+				background-color: transparent;
+			}
+		}
+	}
 
-					.user {
-						a {padding: 8px 5px 0px 7px;}
-						img {padding-right: 8px;}
-					}
+	.user {
+		a {padding: 8px 5px 0px 7px;}
+		img {padding-right: 8px;}
+	}
 
-					.caret {
-						margin-left: 13px;
-					}
-				}
+	.caret {
+		margin-left: 13px;
+	}
+}
 
-				.dropdown-menu {
-					margin-right: -91px;
-					border-top-color: #fff;
-					background-color: $bg-dark;
-					font-size: 11px;
-					padding: 15px 0px 75px 0px;
+.dropdown-menu {
+	margin-right: -91px;
+	border-top-color: #fff;
+	background-color: $bg-dark;
+	font-size: 12px;
+	padding: 15px 0px 75px 0px;
 
-					>li >a {
-						color: #fff;
-						&:hover, &:focus {
-							color: $link-highlight;
-							background-image: none;
-							background-color: transparent;
-						}
-					}
-					.caret {
-						color: #fff;
-						margin-top: -27px;
-						margin-left: 45px;
-						transform: rotate(180deg);
-					}
-				}
+	>li >a {
+		color: #fff;
+		&:hover, &:focus {
+			color: $link-highlight;
+			background-image: none;
+			background-color: transparent;
+		}
+	}
+	.caret {
+		color: #fff;
+		margin-top: -27px;
+		margin-left: 45px;
+		transform: rotate(180deg);
+	}
+}
 //Primary Navigation - User Profile//
 .user-profile-nav {
-
 	.navbar-brand { 
 		img {
 			content: asset-url('Logo_All_Black.png');
+		}
+	}
+
+	.navbar-collapse {
+		padding-top: 3%;
+		border-color: #6b6b6b;
+		@media (max-width: 767px) {
+			background-color: rgba(185,185,185,0.8);
+		}
+	}
+
+	.navbar-toggle {
+		margin-top: 22px;
+		.icon-bar {
+			background-color: #6b6b6b;
 		}
 	}
 
@@ -99,12 +126,23 @@
 				color: $link-highlight;
 			}	
 		}
+
+		.open {
+			.dropdown-menu > li > a {
+				@media (max-width: 767px) {
+					color: #757575;
+				}
+			}
+		}
+
+		.open > a:hover, a:focus {
+			color: #757575;
+			background-color: transparent;
+		}
 	}
 }
-
 .navbar-default .navbar-nav .open > a:hover, .navbar-default .navbar-nav .open > a:focus {
-	color: #757575;
-	background-color: transparent;
+	color: #757575
 }
 
 //Secondary Navigation//
@@ -167,10 +205,6 @@
 					color: #808080;
 					display: block;
 					padding-top: 25px;
-				}
-
-				.col-md-12 {
-					padding: 0 30px;
 				}
 			}
 
