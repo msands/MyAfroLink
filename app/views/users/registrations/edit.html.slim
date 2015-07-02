@@ -1,11 +1,11 @@
-.section-edit-profile
+.section-edit-account
   .container
     .row
       .col-md-2
       .col-md-8
         .panel.panel-default
           .panel-heading
-            h3.panel-title EDIT YOUR PROFILE
+            h3.panel-title EDIT YOUR ACCOUNT
           .panel-body
             = resource_name.to_s.humanize
             = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'form-group-left' }) do |f|
@@ -21,7 +21,7 @@
               .field
                 = f.label :password
                 i
-                  | (leave blank if you don't want to change it)
+                  | (Leave this blank if you prefer your current password)
                 br
                 = f.password_field :password, autocomplete: "off", class: 'form-control'
               .field
@@ -32,7 +32,7 @@
                 .field
                   = f.label :current_password
                   i
-                    | (we need your current password to confirm your changes)
+                    | (Please provide your current password to confirm your changes)
                   br
                   = f.password_field :current_password, autocomplete: "off", class: 'form-control'
               .actions
@@ -40,8 +40,7 @@
               h3
                 | Cancel My Account
               p.cancel_description
-                | Unhappy?
+                | Want to cancel your link to Africa?
                 br
-              = button_to "Cancel My Account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn-cancel btn-success"
-              = link_to "Back", :back
+              = button_to "Cancel My Link", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn-cancel btn-success"
       .col-md-2

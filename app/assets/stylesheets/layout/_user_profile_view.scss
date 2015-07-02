@@ -2,6 +2,7 @@
 
 .section-user-profile-view {
 	margin-top: 50px;
+	margin-bottom: 100px;
 	color: #757575;
 	.container {
 		padding-bottom: 50px;
@@ -49,14 +50,23 @@
 			}
 
 			img {
-				height: 40%;
-				width: 40%;
 				padding-right: 20px;
 			}
 
 			p {
 				padding: 15px 0 60px 0;
 				font-size: 17px;
+			}
+
+			.business-list {
+				margin-bottom: 25px;
+
+				h4 {
+					margin-top: 20px;
+					a {
+						color: #757575;
+					}
+				}
 			}
 		}
 	}
