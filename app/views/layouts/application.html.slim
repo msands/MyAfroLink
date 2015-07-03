@@ -1,5 +1,5 @@
 doctype html
-html 
+html
   head
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
     meta content="width=device-width, initial-scale=1.0" name="viewport" /
@@ -9,7 +9,11 @@ html
     = csrf_meta_tags
   body class="#{@home_page ? 'homepage' : ''}"
     = render 'layouts/nav'
-    p.notice= notice
-    p.alert= alert
+    .container
+      - flash.each do |name, msg|
+        .alert.alert-info.alert-dismissable
+          button.close aria-hidden="true" data-dismiss="alert" type="button"
+            | &times;
+          = content_tag(:div, msg)
     = yield
     = render 'layouts/footer_home'
