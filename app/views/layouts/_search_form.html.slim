@@ -1,0 +1,5 @@
+= form_tag business_profiles_path, method: :get do
+  .input-group
+    = text_field_tag :query, params[:query], class: "form-control text-center input-search", placeholder: "WHAT ARE YOU LOOKING FOR?"
+    span.input-group-btn
+      = button_tag "SEARCH", class: "btn btn-success"
