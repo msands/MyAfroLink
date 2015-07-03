@@ -2,6 +2,7 @@
 .section-edit-profile {
 	color: #757575;
 	margin-top: 50px;
+	margin-bottom: 50px;
 
 	.fa-map-marker {
 		padding-right: 5px;
@@ -38,36 +39,31 @@
 		}
 
 		.panel-body {
-			height: 832px;
+			height: 100%;
 
 			h4 {
 				margin: 20px 0 0 0;
 			}
 
 			.form-group-left {
-				padding: 39px 0 0 45px;
-
-
-				label {
-					margin: 15px 0 15px 0;
-				}
-				.extra-padding {
-					margin-top: 60px;
-				}
+				padding: 39px 45px 0 45px;
 
 				.form-control {
 					height: 44px;
 					background-color: #f6f6f6;
 					border: none;
 					color: #828283;
-					width: 80%;
+					width: 100%;
 				}
 
 				.row {
+
 					label {
-						margin-top: 43px;
+						margin-top: 30px;
+						margin: 15px 0 15px 0;
 						display: block;
 					}
+
 					select {
 						width: 100%;
 						background-color: #fff;
@@ -84,11 +80,18 @@
 						width: 220px;
 					}
 
+					.extra-padding {
+						margin-top: 31px;
+					}
+
+					textarea {
+						height: 134px;
+					}
+
 					#user_profile_birthday_2i, #user_profile_birthday_3i, #user_profile_birthday_1i {
-						margin-top: 76.5px;
 						display: inline;
 						height: 44px;
-						width: 23%;
+						width: 32%;
 						background-color: #fff;
 						font-size: 13px;
 						border: 1px solid #ececec;
@@ -106,8 +109,8 @@
 					background: #8067b7;
 					box-shadow: none;
 					font-size: 11px;
-					margin: 25px 0 0 0;
-					padding: 10px 55px;
+					margin: 45px 0;
+					width: 100%;
 					border-radius: 35px;
 				}
 

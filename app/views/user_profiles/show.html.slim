@@ -1,27 +1,35 @@
-h2 User Profiles
+section.section-user-profile-view
+  .container
+    .row
+      .col-md-3
+        .profile-pic
+          =<> image_tag @user_profile.image.url(:medium), class: 'img-responsive'
+        p.username
+          =< @user_profile.first_name
+          =<> @user_profile.last_name
+        p
+          =<> mail_to @user_profile.email, @user_profile.email
+        p
+          =<> @user_profile.gender
+        p
+          =<> @user_profile.birthday.strftime('%m-%d-%Y')
+        p
+          =<> @user_profile.tribe
 
-p
-  | Profile photo:
-  =<> image_tag @user_profile.image.url(:medium)
-p
-  | Name:
-  =< @user_profile.first_name
-  =<> @user_profile.last_name
-
-p
-  | Email address:
-  =<> mail_to @user_profile.email, @user_profile.email
-
-p
-  | Gender:
-  =<> @user_profile.gender
-p
-  | Birthday:
-  =<> @user_profile.birthday.strftime('%m-%d-%Y')
-p
-  | Tribe:
-  =<> @user_profile.tribe
-
-- if @user_profile.user == current_user
-  | If you would like to modify your user profile, please
-  =<> link_to "click here", edit_user_profile_path
+        - if @user_profile.user == current_user
+          p.edit
+            =<> link_to "EDIT PROFILE", edit_user_profile_path(current_user.user_profile), class: 'edit_profile_border'
+      .col-md-9
+        /! Introduction and User Businesses
+        .white-background
+          h3 INTRODUCTION
+          p
+            = @user_profile.description
+        h2.page-header
+          | BUSINESSES
+        ul.row
+          - user_businesses.each do |user_business|
+            .col-md-4.business-list
+              li =<> link_to user_business
+                = image_tag user_business.image.url(:small)
+                h4 =<> link_to user_business.name, @business_profile
