@@ -10,9 +10,12 @@
 		position: absolute;
 	}
 
-	.cover_image {
-		height: 100%;
-		width: 100%;
+	.container-fluid {
+		padding: 0;
+		height: 556px;
+		.cover_image {
+			height:100%;
+		}
 	}
 
 	.grey-background {
@@ -29,8 +32,23 @@
 				img {
 				}
 			}
-			.col-xs-12.col-md-10 {
-				margin-top: 22px;
+			.col-xs-4.col-md-3 {
+				margin-top: -70px;
+				.container-fluid {
+					height: 100%;
+					img {
+						margin-bottom: 10px;
+					}
+
+					a {
+						display: block;
+						color: #fff;
+					}
+				}
+			}
+
+			.col-xs-8.col-md-9 {
+				margin-top: 11px;
 				p {
 					line-height: 14px;
 				}
@@ -49,6 +67,7 @@
 		.business-description {
 			margin-top: 44px;
 			padding-right: 34px;
+			padding-left: 7px;
 			color: #757575;
 			.fav-business {
 				border: 1px solid #757575;
@@ -86,6 +105,7 @@
 
 		.edit-business {
 			margin-top: 30px;
+			padding-left: 7px;
 			.col-xs-12.col-md-10{
 				padding-left: 9px;
 			}

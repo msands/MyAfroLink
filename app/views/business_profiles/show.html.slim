@@ -1,14 +1,14 @@
 .section-business-profile
-  =<> image_tag @business_profile.image.url(:large), class: 'cover_image'
+  .container-fluid
+    =<> image_tag @business_profile.image.url(:large), class: 'cover_image'
   .grey-background
   .container
-    .row.business-information
-      .col-xs-6.col-md-2
-        p
-          |Business Owner
-          br
+    .row.business-information.center-block
+      .col-xs-4.col-md-3.text-center
+        .container-fluid.pull-right
+          = image_tag "avatar_business.png"
           = link_to business_owner.display_name, user_profile_path(business_owner.user_profile)
-      .col-xs-12.col-md-10
+      .col-xs-8.col-md-9
         p.business_name
           =<> @business_profile.name
 
