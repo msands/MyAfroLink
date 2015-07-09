@@ -11,7 +11,7 @@ html
     = render 'layouts/nav'
     .container
       - flash.each do |name, msg|
-        .alert.alert-info.alert-dismissable
+        .alert.alert-info.alert-dismissable.text-center
           button.close aria-hidden="true" data-dismiss="alert" type="button"
             | &times;
           = content_tag(:div, msg)

@@ -11,8 +11,18 @@ body{
 }
 
 .alert {
-	padding: 0;
 	border: 0;
+	padding: 5px;
+	background-color: rgba(42, 42, 42, 0.8);
+	color: #fff;
+}
+
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: 8px;
+	color: #fff;
 }
 
 .header {
