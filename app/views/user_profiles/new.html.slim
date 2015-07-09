@@ -1,29 +1,37 @@
 .section-create-profile
 	.container
 		.row
-			.col-md-12
+			.col-md-1
+			.col-md-10
 				.panel.panel-default
 					.panel-heading
 						h3.panel-title CREATE YOUR PROFILE
 					.panel-body
 						= simple_form_for(@user_profile, html: { class: 'form-group-left' }) do |f|
-							= f.input :first_name, class: 'form-control'
-							= f.input :last_name, class: 'form-control'
+							.row
+								.form-group.col-md-12
+									= f.input :first_name, class: 'form-control'
+							.row
+								.form-group.col-md-12
+									= f.input :last_name, class: 'form-control'
 							.row
 								.form-group.col-md-4
 									.btn-group
 										.width-gender
-											= f.input :gender, collection: UserProfile::GENDERS, as: :select, class: 'width-gender'
+											= f.input :gender, collection: UserProfile::GENDERS, as: :select
 								.form-group.col-md-8
+									= f.label :birthday, "Date of Birth"
 									= f.date_select :birthday, as: :date, start_year: Date.today.year - 90, end_year: Date.today.year - 12, order: [:month, :day, :year]
-								.row
-									.form-group.col-md-4
-										.btn-group
-											.width-tribe
-												= f.input :tribe, collection: UserProfile::TRIBES, as: :select
-								.row
-									.form-group.col-md-8
-										= f.input :description, :placeholder "Write a brief description about yourself and how you got started with your business.", class: "form-control"
-								= f.label :image, "Upload Profile Photo"
-								= f.file_field :image
-								= f.submit "Create Profile", class: "btn btn-success"
+							.row
+								.form-group.col-md-4
+									.btn-group
+										.width-tribe
+											= f.input :tribe, collection: UserProfile::TRIBES, as: :select
+									= f.label :image, "Upload Profile Photo", class: 'extra-padding'
+									= f.file_field :image
+								.form-group.col-md-8
+									= f.input :description, placeholder: "Write a brief description about yourself and how you got started with your business.", class: "form-control description"
+							.row
+								.form-group.col-md-12
+									= f.submit "Create Profile", class: "btn btn-success"
+			.col-md-1
