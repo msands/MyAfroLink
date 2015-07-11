@@ -2,9 +2,9 @@ section.section-businesses
   .container
 	  h2 Business Listing
 
-	  ul.profile-index
+	  ul.profile-index.row
 	    - @business_profiles.each do |business_profile|
-	      .col-md-4
+	      .col-md-6
 	        li =<> link_to business_profile
 	          = image_tag business_profile.image.url(:medium)
 	          =<> link_to business_profile.name, business_profile
