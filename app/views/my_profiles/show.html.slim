@@ -29,5 +29,5 @@ section.section-user-profile-view
           - user_businesses.each do |user_business|
             .col-md-4.business-list
               li =<> link_to user_business
-                = image_tag user_business.image.url(:small)
+                = image_tag user_business.image.url(:thumb)
                 h4 =<> link_to user_business.name, business_profile_path(user_business)

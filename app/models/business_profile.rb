@@ -5,7 +5,7 @@ class BusinessProfile < ActiveRecord::Base
 
   belongs_to :user
 
-  has_attached_file :image, :styles => { large: "1280x556#", medium: "555x555#", small: "200x200>", thumb: "100x100>" }
+  has_attached_file :image, :styles => { large: "1280x556#", medium: "555x555#", small: "200x200>", thumb: "262x262#" }
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
   validates :name, :address, :city, :category, presence: true
