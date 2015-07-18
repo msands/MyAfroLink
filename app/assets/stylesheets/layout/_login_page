@@ -1,0 +1,145 @@
+//Modal//
+
+//Signup Modal//
+.signup {
+	.modal-dialog {
+		margin-top:  100px;
+		.modal-content {
+			background-color: #333334;
+
+			.modal-header {
+				border-bottom: 1px solid #373638; 
+				.modal-title {
+					color: #fff;
+					padding: 20px 0 20px 0;
+				}
+				.close {
+					margin-top: -50px;
+					color: #808080;
+					text-shadow: 0 0 0 #808080;
+					width: 20px;
+					height: 27px;
+					padding: 0 2.5px;
+					font-size: 25px;
+					border-radius: 15px;
+					//border: 3px solid #808080;
+				}
+			}
+			.modal-body {
+				.form-control {
+					margin-top: 23px;
+					height: 44px;
+					background-color: #3c3c3e;
+					border: none;
+					color: #fff;
+				}
+
+				@include placeholder {
+					color: #fff;
+				}
+
+				label {
+					color: #808080;
+					display: block;
+					padding-top: 25px;
+				}
+			}
+
+			.modal-footer {
+				border-top: 0px solid #373638;
+			}
+			.btn {
+				background-color: #8067b7;
+				border-color: transparent;
+				background: #8067b7;
+				box-shadow: none;
+				font-size: 11px;
+				margin: 30px 0 15px 0;
+				padding: 10px 25px;
+				border-radius: 35px;
+
+				@include link (#fff, #fff, #fff, #fff);
+			}
+
+			.signup-confirm {
+				color: #808080;
+				padding: 15px 0;
+				a {
+					color: #808080;
+					display: inline-block;
+				}
+			}
+		}
+	}		
+}
+
+//Login Modal//
+.login_page {
+	@include link (#fff, #fff, #fff, #fff);
+
+	.form-group-left {
+		margin: 20px 0 0 30px;
+	}
+
+	.form-control {
+		height: 44px;
+		background-color: #eaeaeb;
+		border: none;
+		color: #828283;
+		width: 90%;
+	}
+
+	@include placeholder {
+		color: #828283;
+	}
+
+	p {
+		padding-top: 27px;
+		margin-bottom: 0px;
+		color: #a5a5a5;
+	}
+
+	label {
+		color: #343434;
+		display: block;
+		padding-top: 20px;
+		padding-left: 0;
+	}
+
+	.remember{
+		margin-top: 40px;
+		.check-box {
+			color: #a5a5a5;
+		}
+
+		.check-box-label {
+			color: #a5a5a5;
+			display: inline;
+			padding-left: 10px;
+		}
+	}
+
+	.btn {
+		background-color: #23a55a;
+		border-color: #23a55a;
+		background-image: none;
+		box-shadow: none;
+		color: #fff;
+		text-shadow: none;
+		width: 121px;
+		height: 40px;
+		border-radius: 35px;
+		font-size: 12px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.login-confirm {
+		color: #a5a5a5;
+		padding: 15px 0;
+		a {
+			color: #a5a5a5;
+			display: inline-block;
+		}
+	}
+}
