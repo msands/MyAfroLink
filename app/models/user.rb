@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 
   has_one :user_profile, dependent: :destroy
   has_many :business_profiles
-  delegate :first_name, :last_name, to: :user_profile
+  delegate :first_name, :last_name, :thumbnail_image_url, to: :user_profile
 
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_create do |user|

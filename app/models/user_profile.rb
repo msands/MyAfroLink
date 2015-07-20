@@ -9,4 +9,12 @@ class UserProfile < ActiveRecord::Base
   validates :first_name, :last_name, :gender, presence: true
 
   delegate :email, to: :user
+
+  def thumbnail_image_url
+    if image.present?
+      image.url(:thumb)
+    else
+      'missing.png'
+    end
+  end
 end
