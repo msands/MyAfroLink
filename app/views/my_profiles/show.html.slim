@@ -3,7 +3,7 @@ section.section-user-profile-view
     .row
       .col-md-3
         .profile-pic
-          =<> image_tag @user_profile.image.url(:medium), class: 'img-responsive'
+          =<> image_tag @user_profile.medium_image_url, class: 'img-responsive'
         p.username
           =<> @user_profile.first_name
           =<> @user_profile.last_name

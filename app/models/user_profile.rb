@@ -17,4 +17,12 @@ class UserProfile < ActiveRecord::Base
       'missing.png'
     end
   end
+
+  def medium_image_url
+    if image.present?
+      image.url(:medium)
+    else
+      'missing.png'
+    end
+  end
 end
