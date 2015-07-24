@@ -1,6 +1,12 @@
 section.section-businesses
   .container
-	  h2 Business Listing
+    .row
+      .col-md-3
+      .col-md-6
+        = render 'layouts/search_form'
+      .col-md-3
+    br
+	  h2.text-center Business Listings
 
 	  ul.profile-index.row
       - if @business_profiles.present?
