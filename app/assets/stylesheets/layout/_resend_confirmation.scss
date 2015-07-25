@@ -1,0 +1,89 @@
+.section-resend-confirmation {
+	@include link (#fff, #fff, #fff, #fff);
+
+	.form-group-left {
+		margin-left: 30px;
+	}
+
+	.form-control {
+		height: 44px;
+		background-color: #eaeaeb;
+		border: none;
+		color: #828283;
+		width: 81%;
+		margin-bottom: 17px;
+	}
+
+	@include placeholder {
+		color: #828283;
+	}
+
+	h2 {
+		color: #757575;
+		font-size: 18px;
+		padding-top: 55px;
+	}
+	
+	ul {
+		li {
+			color: #757575;
+		}
+	}
+	p {
+		padding-top: 16px;
+		margin-bottom: 0px;
+		color: #a5a5a5;
+	}
+
+	label {
+		color: #343434;
+		display: block;
+		padding-top: 20px;
+		padding-left: 0;
+	}
+
+	.remember{
+		margin-top: 40px;
+		.check-box {
+			color: #a5a5a5;
+		}
+
+		.check-box-label {
+			color: #a5a5a5;
+			display: inline;
+			padding-left: 10px;
+		}
+	}
+
+	.login-confirm {
+		color: #a5a5a5;
+		padding-bottom: 30px;
+		a {
+			color: #a5a5a5;
+		}
+	}
+
+	.btn {
+		background-color: #23a55a;
+		border-color: #23a55a;
+		background-image: none;
+		box-shadow: none;
+		color: #fff;
+		text-shadow: none;
+		width: 113px;
+		height: 40px;
+		border-radius: 35px;
+		font-size: 12px;
+		margin: 20px 0;
+	}
+
+	.login-confirm {
+		color: #a5a5a5;
+		padding: 10px 0;
+		margin-bottom: 15px;
+		a {
+			color: #a5a5a5;
+			display: inline-block;
+		}
+	}
+}
