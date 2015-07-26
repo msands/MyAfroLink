@@ -11,7 +11,6 @@ section.section-businesses
 	  ul.profile-index.row
       - if @business_profiles.present?
   	    - @business_profiles.each do |business_profile|
-  	      .col-md-6
   	        li =<> link_to business_profile
   	          = image_tag business_profile.image.url(:medium)
   	          =<> link_to business_profile.name, business_profile
