@@ -4,9 +4,11 @@
       .form-group-left.col-md-12
         .field
           = f.label :email, class: 'login modal-body'
+          br
           = f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'jsmith@email.com'
         .field
           = f.label :password, class: 'modal-body'
+          br
           = f.password_field :password, autocomplete: "off", class: 'form-control'
         - if devise_mapping.rememberable?
           .field.remember

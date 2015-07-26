@@ -2,21 +2,22 @@
   .login_page.container-fluid
     .row
     	.col-md-4
-    	.col-md-4
-	      .form-group-left
-	        .field
-	          = f.label :email, class: 'login modal-body'
-	          = f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'jsmith@email.com'
-	        .field
-	          = f.label :password, class: 'modal-body'
-	          = f.password_field :password, autocomplete: "off", class: 'form-control'
-	        - if devise_mapping.rememberable?
-	          .field.remember
-	            = f.check_box :remember_me, class: 'check-box'
-	            = f.label :remember_me, class: 'check-box-label'
-		  .actions.text-center
-		    = f.submit "LOGIN", class: 'btn btn-primary'
-		  .login-confirm.text-center
-		  	= render "users/shared/links"
+    	.col-md-4.panel
+    		.panel-body
+		      .form-group-left
+		        .field
+		          = f.label :email, class: 'login modal-body'
+		          = f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'jsmith@email.com'
+		        .field
+		          = f.label :password, class: 'modal-body'
+		          = f.password_field :password, autocomplete: "off", class: 'form-control'
+		        - if devise_mapping.rememberable?
+		          .field.remember
+		            = f.check_box :remember_me, class: 'check-box'
+		            = f.label :remember_me, class: 'check-box-label'
+			  .actions.text-center
+			    = f.submit "LOGIN", class: 'btn btn-primary'
+			  .login-confirm.text-center
+			  	= render "users/shared/links"
 		.col-md-4
 
