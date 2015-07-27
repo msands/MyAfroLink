@@ -11,11 +11,11 @@
 		text-decoration: none;
 		padding-right: 30px;
 		&:hover, &:focus {
-			color: $link-highlight; 
+			color: $link-highlight;
 			background-color: transparent;
 		}
 	}
-	@include link (#fff, #fff, $link-highlight, #fff);	
+	@include link (#fff, #fff, $link-highlight, #fff);
 
 }
 
@@ -28,7 +28,8 @@
 
 	a {
 		text-decoration: none;
-		padding-right: 30px;
+		padding-right: 15px;
+		padding-left: 15px;
 		&:hover, &:focus {
 			background-color: transparent;
 			color: #757575;

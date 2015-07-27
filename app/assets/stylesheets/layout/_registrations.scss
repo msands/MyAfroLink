@@ -1,72 +1,55 @@
 .section-registration {
 	@include link (#fff, #fff, #fff, #fff);
 
+	.panel {
+		margin: 25px 15px 100px 15px;
+		background-color: #333334;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	}
+
 	.form-group-left {
 		margin-left: 30px;
 	}
 
 	.form-control {
+		margin-top: 23px;
 		height: 44px;
-		background-color: #eaeaeb;
+		background-color: #3c3c3e;
 		border: none;
-		color: #828283;
+		color: #fff;
 	}
 
 	@include placeholder {
-		color: #828283;
+		color: #fff;
 	}
 
 	#error_explanation {
 		padding: 15px 15px;
 
 		h2 {
-			color: #757575;
+			color: #fff;
 			font-size: 20px;
 		}
 	}
 
 	h4 {
-		color: #757575;
-		padding: 20px 0 40px 0;
+		color: #fff;
+		padding-top: 20px;
 	}
 
-	ul {
-		li {
-			color: #757575;
-		}
+	hr {
+		margin-top: 0px;
+		border-top: 1px solid #3c3c3e;
 	}
+
+	em {
+		color: #757575;
+	}
+
 	p {
 		padding-top: 16px;
 		margin-bottom: 0px;
 		color: #a5a5a5;
-	}
-
-	label {
-		color: #343434;
-		display: block;
-		padding-top: 20px;
-		padding-left: 0;
-	}
-
-	.remember{
-		margin-top: 40px;
-		.check-box {
-			color: #a5a5a5;
-		}
-
-		.check-box-label {
-			color: #a5a5a5;
-			display: inline;
-			padding-left: 10px;
-		}
-	}
-
-	.login-confirm {
-		color: #a5a5a5;
-		padding-bottom: 30px;
-		a {
-			color: #a5a5a5;
-		}
 	}
 
 	.btn {
@@ -79,14 +62,14 @@
 		width: 160px;
 		height: 40px;
 		border-radius: 35px;
-		font-size: 12px;
+		font-size: 11px;
 		margin: 20px 0;
 	}
 
-	.login-confirm {
+	.signup-confirm {
 		color: #a5a5a5;
 		padding: 10px 0;
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 		a {
 			color: #a5a5a5;
 			display: inline-block;

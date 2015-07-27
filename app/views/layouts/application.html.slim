@@ -10,10 +10,14 @@ html
   body class="#{@home_page ? 'homepage' : ''}"
     = render 'layouts/nav'
     .container
-      - flash.each do |name, msg|
-        .alert.alert-info.alert-dismissable.text-center
-          button.close aria-hidden="true" data-dismiss="alert" type="button"
-            | &times;
-          = content_tag(:div, msg)
+      .row
+        .col-md-4
+        .col-md-4
+          - flash.each do |name, msg|
+            .alert.alert-info.alert-dismissable.text-center
+              button.close aria-hidden="true" data-dismiss="alert" type="button"
+                | &times;
+              = content_tag(:div, msg)
+        .col-md-4
     = yield
     = render 'layouts/footer_home'
