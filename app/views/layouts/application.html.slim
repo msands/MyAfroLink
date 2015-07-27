@@ -14,7 +14,7 @@ html
         .col-md-4
         .col-md-4
           - flash.each do |name, msg|
-            .alert.alert-info.alert-dismissable.text-center
+            .alert.alert-dismissable.text-center
               button.close aria-hidden="true" data-dismiss="alert" type="button"
                 | &times;
               = content_tag(:div, msg)
