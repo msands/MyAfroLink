@@ -8,12 +8,7 @@
       .form-group.col-md-6
         .field
           - if f.object.password_required?
-            - if @validatable
-            = f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Password'
-              em
-                | (
-                = @minimum_password_length
-                |  characters minimum)
+            = f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Password', hint: ("#{@minimum_password_length} characters minimum" if @validatable)
       .form-group.col-md-6
         .field
           = f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: 'Confirm Password'
