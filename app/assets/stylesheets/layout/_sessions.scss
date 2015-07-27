@@ -1,10 +1,15 @@
-.section-resend-confirmation {
+.section-sessions {
+
 	@include link (#fff, #fff, #fff, #fff);
 
 	.panel {
 		margin: 25px 15px 100px 15px;
 		background-color: #333334;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+		.panel-body {
+			padding: 15px 0;
+		}
 	}
 
 	.form-group-left {
@@ -23,20 +28,30 @@
 		color: #fff;
 	}
 
-	h2 {
-		color: #757575;
-		font-size: 21px;
-		padding-top: 55px;
-		@media (max-width: 767px){
-			font-size: 16px;
+	#error_explanation {
+		padding: 15px 15px;
+
+		h2 {
+			color: #fff;
+			font-size: 20px;
 		}
 	}
 
-	ul {
-		li {
-			color: #757575;
-		}
+	h4 {
+		color: #fff;
+		padding-top: 20px;
+		padding-bottom: 15px;
 	}
+
+	hr {
+		margin-top: 0px;
+		border-top: 1px solid #3c3c3e;
+	}
+
+	em {
+		color: #757575;
+	}
+
 	p {
 		padding-top: 16px;
 		margin-bottom: 0px;
@@ -44,31 +59,9 @@
 	}
 
 	label {
-		color: #343434;
-		display: block;
+		color: #808080;
 		padding-top: 20px;
-		padding-left: 0;
-	}
-
-	.remember{
-		margin-top: 40px;
-		.check-box {
-			color: #a5a5a5;
-		}
-
-		.check-box-label {
-			color: #a5a5a5;
-			display: inline;
-			padding-left: 10px;
-		}
-	}
-
-	.login-confirm {
-		color: #a5a5a5;
-		padding-bottom: 30px;
-		a {
-			color: #a5a5a5;
-		}
+		padding-left: 10px;
 	}
 
 	.btn {
@@ -78,17 +71,17 @@
 		box-shadow: none;
 		color: #fff;
 		text-shadow: none;
-		width: 113px;
+		width: 160px;
 		height: 40px;
 		border-radius: 35px;
-		font-size: 12px;
+		font-size: 11px;
 		margin: 20px 0;
 	}
 
 	.login-confirm {
 		color: #a5a5a5;
 		padding: 10px 0;
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 		a {
 			color: #a5a5a5;
 			display: inline-block;

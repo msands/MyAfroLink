@@ -7,11 +7,9 @@
 				  | Forgot your password?
 				= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
 				  = devise_error_messages!
-				  .form-group-left.col-md-12
+				  .form-group.col-md-12
 					  .field
-					    = f.label :email
-					    br
-					    = f.email_field :email, autofocus: true, class: 'form-control'
+					    = f.email_field :email, autofocus: true, placeholder: 'Email Address', class: 'form-control'
 				  .actions.text-center
 				    = f.submit "RESET", class: 'btn'
 				.login-confirm.text-center
