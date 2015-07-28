@@ -5,7 +5,7 @@ section.section-user-profile-view
         .profile-pic
           =<> image_tag @user_profile.medium_image_url, class: 'img-responsive'
         p.username
-          =< @user_profile.first_name
+          =<> @user_profile.first_name
           =<> @user_profile.last_name
         p
           =<> mail_to @user_profile.email, @user_profile.email
@@ -27,9 +27,9 @@ section.section-user-profile-view
             = @user_profile.description
         h2.page-header
           | BUSINESSES
-        ul.row
+        ul.profile-index.row
           - user_businesses.each do |user_business|
             .col-md-4.business-list
               li =<> link_to user_business
-                = image_tag user_business.image.url(:small)
+                = image_tag user_business.image.url(:thumb)
                 h4 =<> link_to user_business.name, business_profile_path(user_business)
