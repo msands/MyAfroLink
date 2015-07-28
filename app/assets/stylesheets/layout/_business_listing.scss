@@ -1,39 +1,98 @@
-//User's Business Listing//
+//Business Listing//
 .section-businesses {
 	margin-top: 50px;
-	margin-bottom: 100px;
+	margin-bottom: 200px;
 
-	h2 {
-		margin-bottom: 50px;
+	.darkgrey-background {
+		background-color: #333334;
+		color: #c6c6c7;
+
+		.col-md-6 {
+			margin-bottom: 48px;
+		}
+
+		.fa-search {
+			position: absolute;
+			left: 50px;
+			font-size: 20px;
+			width: 20px;
+			margin-left: -2.5px;
+			text-align: center;
+			padding: 10px 0;
+			top: 60px
+		}
+
+		input {
+			margin-top: 50px;
+			border-radius: 30px;
+			padding: 30px 0 30px 30px;
+		}
+
+		.btn {
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+			background-color: #c6c6c7;
+			border-color: #c6c6c7;
+			background: #c6c6c7;
+			box-shadow: none;
+			color: #858585;
+			font-size: 14px;
+			margin-top: 50px;
+			width: 110px;
+			height: 62px;
+		}
 	}
 
-	.business-avatar {
-		padding: 60px 0 60px 0;
-		img {
-			padding-right: 15px;
+	.business_listing {
+		margin-top: 50px;
+		.col-md-4 {
+			margin-bottom: 70px;
+			img {
+				margin-right: 15px;
+			}
+
+			.business_name {
+				display: block;
+				padding: 15px 15px 10px 0;
+				color: #757575;
+				font-weight: bold;
+				font-size: 2em;
+				line-height: 31px;
+			}
+
+			.business_city {
+				display: block;
+				color: #757575;
+				font-size: 1.7em;
+			}
+
+			.business-avatar {
+				padding: 60px 0 60px 0;
+				img {
+					padding-right: 15px;
+				}
+
+				p {
+					color: #757575;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.no_results {
+		margin-left: 15px;
+		h4 {
+			margin-top: 30px;
 		}
 
 		p {
-			color: #757575;
-			font-size: 14px;
-		}
-
-	}
-
-	.col-md-6 {
-		margin-bottom: 48px;
-
-		img {
-			margin-bottom: 32px;
-			width: 100%;
-		}
-
-		a {
-			display: block;
-			padding-right: 15px;
-			color: #757575;
+			margin-top: 30px;
 			font-weight: bold;
-			font-size: 24px;
+		}
+
+		ul {
+			font-size: 15px;
 		}
 	}
 }

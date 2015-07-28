@@ -1,18 +1,27 @@
 section.section-businesses
+  .darkgrey-background
+    .container
+      .row
+        .col-md-3
+        .col-md-6
+          = render 'layouts/search_form'
+        .col-md-3
   .container
-    .row
-      .col-md-3
-      .col-md-6
-        = render 'layouts/search_form'
-      .col-md-3
-    br
-	  h2.text-center Business Listings
-
-	  ul.profile-index.row
+    ul.profile-index.row.business_listing
       - if @business_profiles.present?
   	    - @business_profiles.each do |business_profile|
+          .col-md-4
   	        li =<> link_to business_profile
   	          = image_tag business_profile.image.url(:medium)
-  	          =<> link_to business_profile.name, business_profile
+  	          =<> link_to business_profile.name, business_profile, class: 'business_name'
+              =<> link_to business_profile.city, business_profile, class: 'business_city'
       - else
-        p No results
+        .no_results.col-md-4
+          h4 Sorry, we currently have no business listing that matches your criteria.
+          p In the meantime:
+          ul
+            li Double check your spelling.
+            li Try more general keywords.
+            li Try a different keyword.
+        .col-md-8
+
