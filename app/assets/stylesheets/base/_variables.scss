@@ -12,3 +12,12 @@ $bg-grey: rgba(185,185,185,0.8);
 $green-button: #55a144;
 $green-border: #174701;
 
+//Fonts//
+@font-face {
+font-family: 'GothamHTF-Book';
+font-style: normal;
+font-weight: normal;
+src: asset-url('GothamHTF-Book.woff');
+}
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
