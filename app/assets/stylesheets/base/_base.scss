@@ -6,9 +6,9 @@
 }
 
 body {
-    font-size: 12px;
+    font-size: $baseFontSize;
     line-height: 1.5em;
-    background-color: #f8f8f8;
+    background: #f8f8f8 asset-url("texture.png") repeat 0 0;
 }
 
 .inline {

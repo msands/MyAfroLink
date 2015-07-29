@@ -86,6 +86,9 @@ body{
 			background-color: $bg-dark;
 			height: 100px;
 			padding-top: 21px;
+			@media (max-width: 480px) {
+				margin-bottom: 84px;
+			}
 
 			.container {
 				margin-top: 5px;
@@ -98,7 +101,7 @@ body{
 					.form-control {
 						background-color: #fff;
 						color: #000;
-						font-size: 13px;
+						font-size: 16px;
 						border: 1.7px solid #b0b0b0;
 						border-radius: 0px;
 						display: inline;
@@ -121,22 +124,23 @@ body{
 
 				.input-search {
 					height: 49px;
+					padding-left: 35px;
 				}
 
 				button {
-					font-size: 14px;
+					font-size: 16px;
 					background-color: $green-button;
 					border: none;
 					color: #fff;
-					padding: 14.5px 50px 14.5px 50px;
+					padding: 13.5px 50px 13.5px 50px;
 					@include border-radius(3px);
 					border-bottom: 2px solid $green-border;
 					@media (max-width: 767px) {
-						padding: 14.5px 8px 14.5px 8px;
+						padding: 13.5px 8px 13.5px 8px;
 					}
 
 					@media (max-width: 480px) {
-						padding: 14.5px 5px 14.5px 5px;
+						padding: 13.5px 5px 13.5px 5px;
 					}
 				}
 			}
