@@ -5,7 +5,7 @@
 	.container {
 		color: #6b6b6b;
 		line-height: 20px;
-		margin-bottom: 60px;
+		margin-bottom: 90px;
 
 		h3 {
 			padding: 20px 0 20px 0;
@@ -18,11 +18,12 @@
 			}
 
 			p {
+				text-align: justify;
 				margin-bottom: 20px;
 				@include link (#6b6b6b, $link-highlight, #2bc4a7, $link-highlight);
 			}
 		}
-		
+
 	}
 
 	.text-center {
