@@ -5,6 +5,7 @@ html
     meta content="width=device-width, initial-scale=1.0" name="viewport" /
     title My Afro Link
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body class="#{@home_page ? 'homepage' : ''}"
     = render 'layouts/nav'
@@ -20,4 +21,3 @@ html
         .col-md-4
     = yield
     = render 'layouts/footer_home'
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
