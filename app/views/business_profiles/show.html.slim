@@ -7,8 +7,9 @@
     .row.business-information.center-block
       .col-xs-4.col-md-3.text-center
         .container-fluid.pull-right
-          = image_tag business_owner.thumbnail_image_url, class: "img-circle"
-          = link_to business_owner.display_name, user_profile_path(business_owner.user_profile)
+          =<> link_to business_owner.user_profile
+            = image_tag business_owner.thumbnail_image_url, class: "img-circle"
+            = link_to business_owner.display_name, user_profile_path(business_owner.user_profile)
       .col-xs-8.col-md-9
         p.business_name
           =<> @business_profile.name
