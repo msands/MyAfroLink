@@ -29,12 +29,12 @@ section.section-user-profile-view
           | BUSINESSES
         ul.profile-index.row.business_listing
           - if user_businesses.present?
-            - user_business.each do |user_business|
+            - user_businesses.each do |user_businesses|
               .col-md-4
                 li =<> link_to user_businesses
-                  = image_tag user_business.image.url(:thumb)
-                  =<> link_to user_business.name, business_profile_path(user_business), class: 'business_name'
-                  =<> link_to user_business.city, business_profile_path(user_business), class: 'business_city'
+                  = image_tag user_businesses.image.url(:thumb)
+                  =<> link_to user_businesses.name, business_profile_path(user_businesses), class: 'business_name'
+                  =<> link_to user_businesses.city, business_profile_path(user_businesses), class: 'business_city'
           - else
             .no_results
               p They currently have not listed a business.
