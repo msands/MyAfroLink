@@ -27,9 +27,14 @@ section.section-user-profile-view
             = @user_profile.description
         h2.page-header
           | BUSINESSES
-        ul.profile-index.row
-          - user_businesses.each do |user_business|
-            .col-md-4.business-list
-              li =<> link_to user_business
-                = image_tag user_business.image.url(:thumb)
-                h4 =<> link_to user_business.name, business_profile_path(user_business)
+        ul.profile-index.row.business_listing
+          - if user_businesses.present?
+            - user_business.each do |user_business|
+              .col-md-4
+                li =<> link_to user_businesses
+                  = image_tag user_business.image.url(:thumb)
+                  =<> link_to user_business.name, business_profile_path(user_business), class: 'business_name'
+                  =<> link_to user_business.city, business_profile_path(user_business), class: 'business_city'
+          - else
+            .no_results
+              p They currently have not listed a business.
