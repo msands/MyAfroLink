@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  helper_method :profile_completed?, :user_businesses
+  helper_method :profile_completed?, :my_businesses, :user_businesses
 
   protect_from_forgery with: :exception
 
@@ -19,8 +19,16 @@ class ApplicationController < ActionController::Base
     current_user.user_profile.present?
   end
 
-  def user_businesses
+  def my_businesses
     current_user.business_profiles if current_user.present?
+  end
+
+  def user_businesses
+    profile_owner.business_profiles
+  end
+
+  def profile_owner
+    @user_profile.user
   end
 
   def configure_permitted_parameters

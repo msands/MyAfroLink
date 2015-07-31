@@ -26,12 +26,12 @@ section.section-user-profile-view
         h2.page-header
           | BUSINESSES
         ul.profile-index.row
-          - if user_businesses.present?
-            - user_businesses.each do |user_business|
+          - if my_businesses.present?
+            - my_businesses.each do |my_business|
               .col-md-4.business-list
-                li =<> link_to user_business
-                  = image_tag user_business.image.url(:thumb)
-                  h4 =<> link_to user_business.name, business_profile_path(user_business)
+                li =<> link_to my_business
+                  = image_tag my_business.image.url(:thumb)
+                  h4 =<> link_to my_business.name, business_profile_path(my_business)
           - else
             p
               | Ready to list your business? List your business
