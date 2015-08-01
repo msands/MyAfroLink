@@ -1,8 +1,9 @@
 .section-registration {
+	font-family: 'Lato', sans-serif;
 	@include link (#fff, #fff, #fff, #fff);
 
 	.panel {
-		margin: 25px 15px 100px 15px;
+		margin: 25px 0 100px 0;
 		background-color: #333334;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 	}

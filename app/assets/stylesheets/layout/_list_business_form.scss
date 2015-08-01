@@ -1,9 +1,10 @@
 .section-list-business-form {
+	font-family: 'Lato', sans-serif;
 	padding-top: 50px;
 
 	h4 {
 		color: #505050;
-		margin-top: 10px; 
+		margin-top: 10px;
 		font-weight: bold;
 		color: #757575;
 	}
@@ -91,7 +92,7 @@
 						@include link(#fff, #fff, #fff, #fff);
 					}
 				}
-			}	
+			}
 		}
 	}
 }

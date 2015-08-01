@@ -1,6 +1,7 @@
 //Footer//
 
 .footer {
+	font-family: 'Open Sans', sans-serif;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -9,7 +10,8 @@
 
 	a {
 		text-decoration: none;
-		padding-right: 30px;
+		padding-right: 15px;
+		padding-left: 15px;
 		&:hover, &:focus {
 			color: $link-highlight;
 			background-color: transparent;
@@ -20,6 +22,7 @@
 }
 
 .footer-user-profile {
+	font-family: 'Open Sans', sans-serif;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
