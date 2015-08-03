@@ -19,18 +19,9 @@
 			p {
 				text-align: justify;
 				margin-bottom: 20px;
-				@include link (#6b6b6b, $link-highlight, #2bc4a7, $link-highlight);
+				@include link ($link-highlight, $link-highlight, #2bc4a7, $link-highlight);
 			}
 		}
 
-	}
-
-	.text-center {
-		font-weight: bold;
-		padding-right: 35px;
-		@include link (#6b6b6b, #6b6b6b, #2bc4a7, $link-highlight);
-		a {
-			padding-right: 1px;
-		}
 	}
 }
