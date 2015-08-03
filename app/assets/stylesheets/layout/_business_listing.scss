@@ -65,7 +65,10 @@
 			}
 
 			.business_name {
+				width: 100%;
+				height: 46px;
 				display: block;
+				overflow: hidden;
 				padding: 15px 15px 0 0;
 				color: #757575;
 				font-weight: bold;
