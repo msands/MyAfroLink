@@ -54,19 +54,41 @@
 			}
 
 			p {
-				padding: 15px 0 60px 15px;
+				padding: 15px 0 60px 0px;
 				font-size: 17px;
 				@include link (#6b6b6b, $link-highlight, #2bc4a7, $link-highlight);
 			}
 
-			.business-list {
-				margin-bottom: 25px;
-
-				h4 {
-					margin-top: 20px;
-					a {
-						color: #757575;
+			.business_listing {
+				margin-top: 50px;
+				.col-md-4 {
+					margin-bottom: 70px;
+					font-family: 'GothamHTF-Book';
+					img {
+						width: 100%;
 					}
+
+					.business_name {
+						display: block;
+						padding: 15px 15px 0 0;
+						color: #757575;
+						font-weight: bold;
+						font-size: 1.2em;
+						line-height: 31px;
+					}
+
+					.business_city {
+						display: block;
+						color: #757575;
+						font-size: 1em;
+					}
+				}
+			}
+
+			.no_results {
+				margin-left: 15px;
+				p {
+					margin-top: -63px;
 				}
 			}
 		}
