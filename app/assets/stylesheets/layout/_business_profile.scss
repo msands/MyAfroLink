@@ -96,6 +96,7 @@
 					color: #757575;
 					margin-bottom: 0;
 					margin-right: 278px;
+					font-size: 1.17em;
 					@media (max-width: 767px) {
 						margin-right: 0;
 					}
@@ -103,9 +104,11 @@
 
 				a {
 					color: $link-highlight;
+					font-size: 1.2em;
+					line-height: 1.5;
 				}
 
-				h4 {
+				h3 {
 					margin-top: 45px;
 					margin-bottom: 14px;
 				}
