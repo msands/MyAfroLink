@@ -50,7 +50,8 @@ class UserProfilesController < ApplicationController
       :birthday,
       :tribe,
       :description,
-      :image
+      :image,
+      tribes_attributes: [:id, :new_tribe]
     )
   end
 

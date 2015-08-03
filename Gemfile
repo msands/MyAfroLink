@@ -15,7 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 
 # Building simple forms
 gem 'simple_form', '~> 3.1.0'
-gem 'nested_form', '~> 0.3.2'
+gem 'nested_form', :git => 'git://github.com/ryanb/nested_form.git'
 
 # User profile photo upload
 gem 'paperclip', '~> 4.2.1'

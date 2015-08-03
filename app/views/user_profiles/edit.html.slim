@@ -25,6 +25,9 @@
                 .btn-group
                   .width-tribe
                     = f.input :tribe, collection: UserProfile::TRIBES, as: :select
+                    = simple_fields_for :tribes do |t|
+                      = t.input :new_tribe
+                    = f.link_to_add "Add new tribe", :tribes
               .form-group.col-md-8
                 = f.label :image, "Change Profile Photo", class: 'extra-padding'
                 = f.file_field :image
