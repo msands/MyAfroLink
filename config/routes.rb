@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   resources :user_profiles, only: [:index, :show, :new, :create, :edit, :update]
   resources :business_profiles, only: [:index, :show, :new, :create, :edit, :update]
 
-  root 'static_pages#home'
+  root 'static_pages#landing'
 
+  get 'home' => 'static_pages#home'
   get 'about' => 'static_pages#about'
   get 'help' => 'static_pages#help'
   get 'terms' => 'static_pages#terms'
