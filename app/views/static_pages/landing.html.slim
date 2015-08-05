@@ -1,1 +1,24 @@
-h1 This is the landing page for My Afrolink.
+.landing_page
+  .text-vertical-center
+    section.section-callToAction
+      .container
+        h2 Link to Us, Link to Africa.
+        h3 Fill out the form below to get notified of our launch
+    section.section-landing.text-center
+      .container
+        .row
+          .col-md-3
+          .col-md-3
+            .input-group
+              input class= "form-control input-landing" placeholder= "First Name" type="text"
+              input class= "form-control input-landing" placeholder= "Last Name" type="text"
+          .col-md-3
+              input class= "form-control input-landing" placeholder= "Email Address" type="text"
+              select class= "form-control input-landing"
+          .col-md-3
+        .row
+          .col-md-3
+          .col-md-5
+            span.input-group-btn
+              = button_tag "Sign Up", class: "btn btn-success"
+          .col-md-4
