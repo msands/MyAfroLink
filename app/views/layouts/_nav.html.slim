@@ -1,4 +1,4 @@
-header class="#{@home_page ? 'navbar navbar-default' : 'navbar navbar-default user-profile-nav'}"
+header class="#{@home_page | @landing_page ? 'navbar navbar-default' : 'navbar navbar-default user-profile-nav'}"
   .container
     .navbar-header
       button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"

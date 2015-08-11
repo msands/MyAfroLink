@@ -5,6 +5,11 @@
 	background-size: cover;
 }
 
+.landing {
+  background: asset-url("landing.png") no-repeat center center;
+  background-size: cover;
+}
+
 body {
     font-size: $baseFontSize;
     line-height: 1.5em;

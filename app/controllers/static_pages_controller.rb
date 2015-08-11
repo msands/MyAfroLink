@@ -16,5 +16,6 @@ class StaticPagesController < ApplicationController
   end
 
   def landing
+    @landing_page = true
   end
 end
