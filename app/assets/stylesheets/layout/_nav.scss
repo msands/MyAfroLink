@@ -2,13 +2,16 @@
 
 //Primary Navigation - Homepage//
 .navbar-default {
-	margin-top: 3%;
+	margin-top: 0.5%;
 	margin-bottom: 3%;
 	background-color: transparent;
 	border-color: transparent;
 	border: 0px;
 	background: transparent;
 	box-shadow: none;
+	@media (max-width: 767px) {
+		margin-bottom: 15.5%;
+	}
 
 	.navbar-header {
 		@media (max-width: 767px) {
