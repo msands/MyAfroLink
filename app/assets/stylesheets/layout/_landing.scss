@@ -48,11 +48,11 @@ body{
     font-family: avantgardemditc-bold;
   }
 
-  .text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-
+  .col-md-8 {
+    margin: 5% 0;
+    @media (max-width: 767px) {
+      margin-top: 0px;
+    }
     h2 {
       font-family: avantgardemditc-bold;
       font-size: 6.5vw;
@@ -63,6 +63,9 @@ body{
       }
       @media (min-width: 1390px) {
         font-size: 7.5vw;
+      }
+      @media (min-width: 1920px) {
+        font-size: 5.5vw;
       }
     }
 
@@ -76,6 +79,9 @@ body{
       }
       @media (min-width: 1390px) {
         font-size: 2.3vw;
+      }
+      @media (min-width: 1920px) {
+        font-size: 1.7vw;
       }
     }
   }
@@ -103,6 +109,7 @@ body{
 
         @include placeholder {
           color: #fff;
+          opacity: 0.7;
         }
 
         .form-control {
@@ -161,6 +168,10 @@ body{
             width: 96%;
           }
         }
+      }
+
+      #mce-responses {
+        color: #fff;
       }
     }
   }
