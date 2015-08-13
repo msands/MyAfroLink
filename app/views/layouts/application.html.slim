@@ -8,7 +8,7 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body class="#{@home_page ? 'homepage' : ''} #{@landing_page ? 'landing' : ''}"
-    = render 'layouts/nav'
+    = render 'layouts/nav' unless current_page?(root_path)
     .container
       .row
         .col-md-4
