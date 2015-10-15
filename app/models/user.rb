@@ -9,31 +9,35 @@ class User < ActiveRecord::Base
   delegate :first_name, :last_name, :thumbnail_image_url, to: :user_profile
 
   def self.from_omniauth(auth)
-    where(auth.slice(:provider, :uid)).first_or_create do |user|
-      user.provider = auth.provider
-      user.uid = auth.uid
-      user.email = auth.info.nickname
+    where(provider: auth.provider, uid: auth.id).first_or_create do |user|
+      user.email = auth.info.email
+      user.password = Devise.friendly_token[0,20]
+      #user.first_name = auth.info.first_name
     end
   end
 
-  def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
-    data = access_token.info
-    user = User.where(:provider => access_token.provider, :uid => access_token.uid).first
-    if user
-      return user
-    else
-      registered_user = User.where(:email => access_token.info.email).first
-      if registered_user
-        return registered_user
-      else
-        user = User.create(name: data[:"name"],
-          provider: access_token.provider,
-          email: data["email"],
-          uid: access_token.uid,
-          password: Devise.friendly_token[0,20])
-      end
-    end
-  end
+  ##def self.from_omniauth(auth)
+  ##  where(provider: auth.provider, uid: auth.id).first_or_create do |user|
+  ##    user.email = auth.info.email
+  ##    user.password = Devise.friendly_token[0,20]
+  ##  end
+  ##  data = access_token.info
+  ##  user = User.where(:provider => access_token.provider, :uid => access_token.uid).first
+  ##  if user
+  ##    return user
+  ##  else
+  ##    registered_user = User.where(:email => access_token.info.email).first
+  ##    if registered_user
+  ##      return registered_user
+  ##    else
+  ##      user = User.create(name: data[:"name"],
+  ##        provider: access_token.provider,
+  ##        email: data["email"],
+  ##        uid: access_token.uid,
+  ##        password: Devise.friendly_token[0,20])
+  ##    end
+  ##  end
+  ##end
 
   def self.new_with_session(params, session)
     if session["devise.user_attributes"]
