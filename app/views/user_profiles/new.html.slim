@@ -23,7 +23,7 @@
 							.form-group.col-md-4
 								.btn-group
 									.width-tribe
-										= f.input :tribe, collection: UserProfile::TRIBES, as: :select
+										= f.input :tribe, :label => "Ethnic Group", collection: UserProfile::TRIBES, as: :select
 							.form-group.col-md-8
 								= f.label :image, "Upload Profile Photo", class: 'extra-padding'
 								= f.file_field :image
