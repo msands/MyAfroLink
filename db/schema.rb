@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151015050453) do
+ActiveRecord::Schema.define(version: 20151018062844) do
 
   create_table "business_profiles", force: :cascade do |t|
     t.integer  "user_id"
@@ -30,6 +30,18 @@ ActiveRecord::Schema.define(version: 20151015050453) do
     t.string   "website"
     t.string   "email"
     t.text     "description"
+  end
+
+  create_table "hours_of_operations", force: :cascade do |t|
+    t.time     "Sunday"
+    t.time     "Monday"
+    t.time     "Tuesday"
+    t.time     "Wednesday"
+    t.time     "Thursday"
+    t.time     "Friday"
+    t.time     "Saturday"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "sessions", force: :cascade do |t|

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Sunday: 2015-10-18 02:28:44
+  Monday: 2015-10-18 02:28:44
+  Tuesday: 2015-10-18 02:28:44
+  Wednesday: 2015-10-18 02:28:44
+  Thursday: 2015-10-18 02:28:44
+  Friday: 2015-10-18 02:28:44
+  Saturday: 2015-10-18 02:28:44
+
+two:
+  Sunday: 2015-10-18 02:28:44
+  Monday: 2015-10-18 02:28:44
+  Tuesday: 2015-10-18 02:28:44
+  Wednesday: 2015-10-18 02:28:44
+  Thursday: 2015-10-18 02:28:44
+  Friday: 2015-10-18 02:28:44
+  Saturday: 2015-10-18 02:28:44
