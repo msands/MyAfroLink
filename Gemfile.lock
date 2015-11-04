@@ -89,6 +89,9 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise_invitable (1.5.3)
+      actionmailer (>= 3.2.6, < 5)
+      devise (>= 3.2.0)
     elasticsearch (1.0.12)
       elasticsearch-api (= 1.0.12)
       elasticsearch-transport (= 1.0.12)
@@ -276,6 +279,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 3.4.1)
+  devise_invitable (~> 1.5.3)
   figaro (~> 1.1.1)
   guard-minitest (= 2.4.4)
   jbuilder (~> 2.0)

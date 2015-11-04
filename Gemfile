@@ -25,6 +25,9 @@ gem 'devise', '~> 3.4.1'
 gem 'omniauth-facebook', '~> 2.0.1'
 gem 'omniauth-google-oauth2', '~> 0.2.6'
 
+## User can send invitations
+gem 'devise_invitable', '~> 1.5.3'
+
 # Search
 gem 'searchkick', '~> 0.9.0'
 gem 'twitter-typeahead-rails', '~> 0.10.5'
