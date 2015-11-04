@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151015050453) do
+ActiveRecord::Schema.define(version: 20151028233031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "business_profiles", force: :cascade do |t|
     t.integer  "user_id"
@@ -33,7 +34,10 @@ ActiveRecord::Schema.define(version: 20151015050453) do
     t.string   "website"
     t.string   "email"
     t.text     "description"
+    t.hstore   "hours"
   end
+
+  add_index "business_profiles", ["hours"], name: "business_profiles_gin_hours", using: :gin
 
   create_table "sessions", force: :cascade do |t|
     t.string   "session_id", null: false
