@@ -33,6 +33,7 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) << :email
+    devise_parameter_sanitizer.for(:accept_invitation).concat [:email]
   end
 
   def after_sign_in_path_for(users)
