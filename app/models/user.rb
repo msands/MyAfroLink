@@ -67,4 +67,8 @@ class User < ActiveRecord::Base
     "#{first_name} #{last_name}" if user_profile.present?
   end
 
+  def send_reset_password_instructions
+    super if invitation_token.nil?
+  end
+
 end
