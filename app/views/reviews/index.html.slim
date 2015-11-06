@@ -1,0 +1,6 @@
+h1 Reviews
+
+#comments
+  - @reviews.each do |review|
+    .comment
+      = simple_format review.content

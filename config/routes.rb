@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
 
   resource :my_profiles, only: :show
-  resources :user_profiles, only: [:index, :show, :new, :create, :edit, :update]
-  resources :business_profiles, only: [:index, :show, :new, :create, :edit, :update]
+  resources :user_profiles, except: [:destroy]
+  resources :business_profiles, except: [:destroy] do
+    resources :reviews
+  end
 
   root 'static_pages#landing'
 
