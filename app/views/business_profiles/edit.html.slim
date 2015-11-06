@@ -19,11 +19,15 @@
               .form-group.col-md-6
                 = f.input :email, placeholder: 'owner@business.com'
               .form-group.col-md-6
-                = f.label "Open"
-                = f.time_select :time_open, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
+                = f.simple_fields_for :hours do |h|
+                  = h.input :Sunday_open, label: "Sunday Open"
+                  = h.input :Sunday_close, label: "Sunday Close"
+                  = h.input :Monday
+                /= f.label "Open"
+                /= f.time_select :time_open, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
               .form-group.col-md-6
-                = f.label "Close"
-                =< f.time_select :time_close, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
+                /= f.label "Close"
+                /=< f.time_select :time_close, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
               .form-group.col-md-12
                 = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
                 = f.input :description, as: :text, placeholder: 'What does your business do/offer?', class: 'description'

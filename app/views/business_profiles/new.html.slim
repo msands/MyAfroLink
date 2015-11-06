@@ -19,8 +19,11 @@
               .form-group.col-md-6
                 = f.input :email, placeholder: 'owner@business.com'
               .form-group.col-md-6
-                label Open
-                = f.time_select :time_open, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
+                = f.simple_fields_for :hours do |h|
+                  = h.input :Sunday
+                  = h.input :Monday
+                /label Open
+                /= f.time_select :time_open, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
               .form-group.col-md-6
                 label Close
                 =< f.time_select :time_close, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
