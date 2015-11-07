@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
   before_filter :load_reviewable
+  before_action :authenticate_user!, only: [:new, :create]
 
   def index
     @reviewable = BusinessProfile.find(params[:business_profile_id])
