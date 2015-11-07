@@ -1,0 +1,11 @@
+= simple_form_for [@reviewable, @review] do |f|
+  - if @review.errors.any?
+    .error_messages
+      h2 Please correct the following errors.
+      ul
+        - @review.errors.full_messages.each do |msg|
+          li= msg
+  .field
+    = f.text_area :content, rows: 8
+  .actions
+    = f.submit

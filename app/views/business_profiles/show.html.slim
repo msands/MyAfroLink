@@ -47,3 +47,6 @@
         .col-xs-12.col-md-10
           - if @business_profile.user == current_user
             = link_to "EDIT BUSINESS", edit_business_profile_path, class: 'btn btn-success'
+
+    = render 'reviews/reviews'
+    = render 'reviews/form'

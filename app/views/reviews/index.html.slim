@@ -1,6 +1,5 @@
 h1 Reviews
 
-#comments
-  - @reviews.each do |review|
-    .comment
-      = simple_format review.content
+= render 'reviews'
+
+= link_to "Leave a review", [:new, @reviewable, :review]

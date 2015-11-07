@@ -12,6 +12,9 @@ class BusinessProfilesController< ApplicationController
 
   def show
     @business_profile = BusinessProfile.find(params[:id])
+    @reviewable = @business_profile
+    @reviews = @reviewable.reviews
+    @review = Review.new
   end
 
   def new
