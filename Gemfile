@@ -32,6 +32,9 @@ gem 'twitter-typeahead-rails', '~> 0.10.5'
 # Setting environment variables
 gem 'figaro', '~> 1.1.1'
 
+# Adds ability to rate business profiles
+gem 'ratyrate'
+
 # Fix cookie overflow
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
 
