@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
   has_many :business_profiles
   delegate :first_name, :last_name, :thumbnail_image_url, to: :user_profile
 
+  ratyrate_rater
+
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.id).first_or_create do |user|
       user.email = auth.info.email

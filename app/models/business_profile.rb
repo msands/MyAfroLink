@@ -1,5 +1,6 @@
 class BusinessProfile < ActiveRecord::Base
   searchkick word_middle: [:name]
+  ratyrate_rateable 'price', 'quality', 'service'
 
   CATEGORIES = ["Beauty", "Construction & Home Repair", "Education", "Financial Services", "Auto Repair", "Legal Services", "Health & Medical Services", "Catering Services", "Fashion", "Entertainment", "Professional Services", "Real Estate", "Restaurants/Food & Dining", "Marketing Services", "Web Development", "Transportation", "Travel & Tourism", "Event Coordination", "Other"]
 

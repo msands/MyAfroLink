@@ -47,6 +47,16 @@
         .col-xs-12.col-md-10
           - if @business_profile.user == current_user
             = link_to "EDIT BUSINESS", edit_business_profile_path, class: 'btn btn-success'
-
+    .row
+      .col-xs-2.col-lg-2.columns
+        = imdb_style_rating_for @business_profile, current_user
+      br/
+      .col-xs-2.col-lg-4.columns
+        - if current_user
+          | Price: #{rating_for @business_profile, "price", path: 'star_icons', stars: 5}
+          br/
+          | Quality: #{rating_for @business_profile, "quality", path: 'star_icons', stars: 5}
+          br/
+          | Service: #{rating_for @business_profile, "service", path: 'star_icons', stars: 5}
     = render 'reviews/reviews'
     = render 'reviews/form'
