@@ -17,6 +17,8 @@ section.section-user-profile-view
           =<> @user_profile.tribe
         p.edit
           =<> link_to "EDIT PROFILE", edit_user_profile_path(current_user.user_profile), class: 'edit_profile_border'
+        p.edit
+          =<> link_to "LIST BUSINESS", new_business_profile_path, class: 'edit_profile_border'
       .col-md-9
         /! Introduction and User Businesses
         .white-background

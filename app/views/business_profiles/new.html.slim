@@ -18,15 +18,57 @@
                 = f.input :website, placeholder: 'www.yourbusiness.com'
               .form-group.col-md-6
                 = f.input :email, placeholder: 'owner@business.com'
-              .form-group.col-md-6
+              .form-group.col-md-12
                 = f.simple_fields_for :hours do |h|
-                  = h.input :Sunday
-                  = h.input :Monday
-                /label Open
-                /= f.time_select :time_open, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
-              .form-group.col-md-6
-                label Close
-                =< f.time_select :time_close, { :ampm => true, :minute_step => 15 }, class: 'time text-center'
+                  .row
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Sunday_open, :input_html => { :class => 'datetimepicker' }
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Sunday_close, :input_html => { :class => 'datetimepicker' }
+                  .row
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Monday_open, :input_html => { :class => 'datetimepicker' }
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Monday_close, :input_html => { :class => 'datetimepicker' }
+                  .row
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Tuesday_open, :input_html => { :class => 'datetimepicker' }
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Tuesday_close, :input_html => { :class => 'datetimepicker' }
+                  .row
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Wednesday_open, :input_html => { :class => 'datetimepicker' }
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Wednesday_close, :input_html => { :class => 'datetimepicker'}
+                  .row
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Thursday_open, :input_html => { :class => 'datetimepicker' }
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Thursday_close, :input_html => { :class => 'datetimepicker' }
+                  .row
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Friday_open, :input_html => { :class => 'datetimepicker' }
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Friday_close, :input_html => { :class => 'datetimepicker' }
+                  .row
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Saturday_open, :input_html => { :class => 'datetimepicker' }
+                    .col-md-6
+                      #datetimepicker3.input-append
+                        = h.input :Saturday_close, :input_html => { :class => 'datetimepicker' }
               .form-group.col-md-12
                 = f.input :category, collection: BusinessProfile::CATEGORIES, as: :select
                 = f.input :description, as: :text, placeholder: 'What does your business do/offer?', class: 'description'

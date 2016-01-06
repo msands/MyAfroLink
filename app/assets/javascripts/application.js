@@ -15,3 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require twitter/typeahead
+//= require moment
+//= require bootstrap-datetimepicker
+//= require pickers
+//= require time

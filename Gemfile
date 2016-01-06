@@ -16,6 +16,10 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 # Building simple forms
 gem 'simple_form', '~> 3.1.0'
 
+# Simple_form date/time select
+gem 'momentjs-rails', '~> 2.9', :github => 'derekprior/momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+
 # User profile photo upload
 gem 'paperclip', '~> 4.2.1'
 gem 'aws-sdk', '< 2.0'
