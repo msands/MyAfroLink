@@ -33,7 +33,7 @@ gem 'twitter-typeahead-rails', '~> 0.10.5'
 gem 'figaro', '~> 1.1.1'
 
 # Adds ability to rate business profiles
-gem 'ratyrate'
+gem 'ratyrate', '~> 1.2', '>= 1.2.2.alpha'
 
 # Fix cookie overflow
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
