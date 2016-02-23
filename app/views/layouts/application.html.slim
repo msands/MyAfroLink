@@ -17,10 +17,11 @@ html
         .col-md-4
         .col-md-4
           - flash.each do |name, msg|
-            .alert.alert-dismissable.text-center
-              button.close aria-hidden="true" data-dismiss="alert" type="button"
-                | &times;
-              = content_tag(:div, msg)
+            - next unless msg.is_a? String
+              .alert.alert-dismissable.text-center
+                button.close aria-hidden="true" data-dismiss="alert" type="button"
+                  | &times;
+                = content_tag(:div, msg)
         .col-md-4
     = yield
     = render 'layouts/footer_home' unless current_page?(root_path)
