@@ -52,11 +52,11 @@
         = imdb_style_rating_for @business_profile, current_user
       br/
       .col-xs-2.col-lg-4.columns
-        - if current_user
-          | Price: #{rating_for @business_profile, "price", path: 'star_icons', stars: 5}
+        - if true
+          | Price: #{rating_for @business_profile, "price", disable_after_rate: false, stars: 5}
           br/
-          | Quality: #{rating_for @business_profile, "quality", path: 'star_icons', stars: 5}
+          | Quality: #{rating_for @business_profile, "quality", stars: 5}
           br/
-          | Service: #{rating_for @business_profile, "service", path: 'star_icons', stars: 5}
+          | Service: #{rating_for @business_profile, "service", stars: 5}
     = render 'reviews/reviews'
     = render 'reviews/form'
